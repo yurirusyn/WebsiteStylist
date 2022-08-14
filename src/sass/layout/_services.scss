@@ -10,6 +10,8 @@
   margin-left: auto;
   margin-right: auto;
   // padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .circleOne {
@@ -85,10 +87,13 @@
 
 .service__block {
   display: block;
+  width: 280px;
 }
 
 .service__title {
-  width: 153px;
+  width: 206px;
+
+  margin-bottom: 20px;
 
   font-weight: 400;
   font-size: 30px;
@@ -98,7 +103,10 @@
 }
 
 .service__category {
-  width: 150px;
+  width: 124px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   font-weight: 600;
   font-size: 16px;
@@ -112,6 +120,8 @@
 .service__text {
   width: 280px;
 
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 23px;
@@ -119,4 +129,17 @@
   color: #ffffff;
 
   opacity: 0.8;
+}
+
+.service__button {
+  width: 280px;
+  height: 40px;
+
+  margin-bottom: 60px;
+
+  color: #c4c4c4;
+  background-color: transparent;
+
+  border: 0.5px solid #c4c4c4;
+  cursor: pointer;
 }
