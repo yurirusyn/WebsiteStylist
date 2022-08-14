@@ -31,7 +31,7 @@
 .header {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #070606;;
+    background-color: rgb(22, 23, 23)
  
 }
 
@@ -47,9 +47,12 @@
 .humb-icon {
     fill: #FFFFFF;
     stroke:#FFFFFF;
+width: 100%;
+    height: 100%;
 }
 .navigation {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 .menu-toggle {
@@ -57,20 +60,64 @@
     color: red;
     border: none;
     padding: 0;
-    width: 20px;
-    height: 20px;
+    // width: 20px;
+    // height: 20px;
     z-index: 10;
 }
 .personal__stylist-picture {
     width: 280px;
     height: 390px;
+    justify-content: center;
+    border-radius: 0px 100px 0px 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 .section__hero {
+    display: flex;
+    justify-content: center;
     margin-top: 75px;
 }
+.hero__container {
+
+position: relative;
+    color: white;
+    
+}
+// .hero__picture {
+//     justify-content: center;
+// }
+
+// .hero__content_center {
+//     position: relative;
+//     // height: 30px;
+//         // display: flex;
+//             // height: 19px;
+// }
 .hero__title {
-    font-family: 'Agreverance';
+    position: absolute;
+        top: 23%;
+        // left: 50%;
+    //     transform: translate(-50%, -50%);
+font-family: 'Agreverance';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 40px;
+    /* or 89% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #C09C8D;
+
+    opacity: 0.1;
+    right: -5%;
+}
+.hero__title-2 {
+    position: absolute;
+        top: 27%;
+   
+    font-family: 'AGReverance';
         font-style: normal;
         font-weight: 400;
         font-size: 35px;
@@ -80,5 +127,11 @@
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
+    
+        /* text */
+    
         color: #FFFFFF;
+    
+        opacity: 0.9;
 }
+
