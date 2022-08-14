@@ -30,6 +30,7 @@
 
 .header {
     padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #070606;;
  
 }
@@ -46,9 +47,6 @@
 .humb-icon {
     fill: #FFFFFF;
     stroke:#FFFFFF;
-        width: 40;
-            height: 27;
-        
 }
 .navigation {
     display: flex;
@@ -62,4 +60,25 @@
     width: 20px;
     height: 20px;
     z-index: 10;
+}
+.personal__stylist-picture {
+    width: 280px;
+    height: 390px;
+
+}
+.section__hero {
+    margin-top: 75px;
+}
+.hero__title {
+    font-family: 'Agreverance';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 40px;
+        /* or 114% */
+    
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
 }
