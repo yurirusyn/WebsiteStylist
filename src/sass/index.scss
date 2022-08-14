@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat.ttf);
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat.ttf);
 }
 
 @font-face {
@@ -18,4 +18,5 @@
 @import './layout/instagram';
 @import './layout/reviews';
 @import './layout/services';
+@import './layout/swiper';
 @import './Components/container';
