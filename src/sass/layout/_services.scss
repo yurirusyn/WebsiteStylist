@@ -1,0 +1,149 @@
+.service {
+  width: 375px;
+  // margin: -20px;
+  // margin-left: -50px;
+
+  position: relative;
+
+  background-color: #1c1c1c;
+
+  margin-left: auto;
+  margin-right: auto;
+  // padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.circleOne {
+  position: absolute;
+  top: 10;
+  left: -200;
+
+  width: 400px;
+  height: 250px;
+
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 250px;
+
+  opacity: 0.1;
+  border: 0.5px solid #ffffff;
+  transform: matrix(-0.98, 0.32, -0.18, -0.95, 0, 0);
+  z-index: 10;
+}
+
+.circleTwo {
+  position: absolute;
+  top: 10;
+  left: -100;
+
+  width: 400px;
+  height: 250px;
+
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 250px;
+
+  opacity: 0.1;
+  border: 0.5px solid #ffffff;
+  transform: matrix(-0.98, 0.32, -0.18, -0.95, 0, 0);
+  z-index: 10;
+}
+
+.circleThree {
+  position: absolute;
+  top: 10;
+  left: 100;
+
+  width: 400px;
+  height: 250px;
+
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 250px;
+
+  opacity: 0.1;
+  border: 0.5px solid #ffffff;
+  transform: matrix(-0.98, 0.32, -0.18, -0.95, 0, 0);
+  z-index: 10;
+}
+.circleFour {
+  position: absolute;
+  top: 10;
+  left: 200;
+
+  width: 400px;
+  height: 250px;
+
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 250px;
+
+  opacity: 0.1;
+  border: 0.5px solid #ffffff;
+  transform: matrix(-0.98, 0.32, -0.18, -0.95, 0, 0);
+  z-index: 10;
+}
+
+.service__block {
+  display: block;
+  width: 280px;
+}
+
+.service__title {
+  width: 206px;
+
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+
+  color: #ffffff;
+}
+
+.service__category {
+  width: 124px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ffffff;
+
+  opacity: 0.9;
+}
+
+.service__text {
+  width: 280px;
+
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+
+  color: #ffffff;
+
+  opacity: 0.8;
+}
+
+.service__button {
+  width: 280px;
+  height: 40px;
+
+  margin-bottom: 60px;
+
+  color: #c4c4c4;
+  background-color: transparent;
+
+  border: 0.5px solid #c4c4c4;
+  cursor: pointer;
+}
+
+.secondImage {
+  border-top-right-radius: 40%;
+}
