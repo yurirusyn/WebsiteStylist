@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@import './base/reset';
 @import './example';
 @import './layout/aboutMe';
 @import './layout/advantages';
@@ -7,3 +18,4 @@
 @import './layout/instagram';
 @import './layout/reviews';
 @import './layout/services';
+@import './Components/container';
