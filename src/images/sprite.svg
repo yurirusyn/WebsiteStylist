@@ -4,10 +4,10 @@
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
 </symbol>
-<symbol id="icon-burger" viewBox="0 0 32 32">
-<svg width="40" height="25" viewBox="0 0 40 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 1H40M0 13.8378H40M0 26H40" stroke="white" stroke-width="0.5"/>
-</svg>
+<symbol id="icon-burger" viewBox="0 0 24 24">
+<path d="M32 16c0 8.831-7.169 16-16 16s-16-7.169-16-16c0-8.831 7.169-16 16-16s16 7.169 16 16zM30.667 16c0-8.095-6.572-14.667-14.667-14.667s-14.667 6.572-14.667 14.667 6.572 14.667 14.667 14.667 14.667-6.572 14.667-14.667zM15.333 22.437v-15.771h1.333v15.768l4.996-6.139 1.004 0.888-6.667 8.149-6.667-8.135 0.983-0.905 5.017 6.144z"></path>
+</symbol>
+</symbol>
 </svg>
 </symbol>
 <symbol id="icon-home" viewBox="0 0 32 32">
