@@ -11,7 +11,7 @@ html {
 body {
 	font-family: 'Source Sans Pro', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	min-height: 100vh;
-	color: #57585c;
+	color: #1C1C1C;
 	color: var(--color-text);	
 	background-color: #fff;
 	background-color: var(--color-bg);
@@ -71,7 +71,7 @@ body {
 
 .demo-3 {
 	--color-text: #fbd54a;
-	--color-bg: #333;
+	--color-bg: #1C1C1C;
 	--color-link: #4d4f5f;
 	--color-link-hover: #bfb5b5;
 	--color-info: #fff;
@@ -350,11 +350,12 @@ a.demo--current {
 	left: 0;
 	pointer-events: none;
 	z-index: 100;
-}
-
-.demo-5 .global-menu {
 	text-align: center;
 }
+
+/* .demo-5 .global-menu {
+	text-align: center;
+} */
 
 .global-menu__item {
 	color: #1C1C1C;
@@ -368,10 +369,14 @@ a.demo--current {
 	transform: translateY(-100%);
 	pointer-events: none;
 	display: block;
-	margin: 0.25em 0;
+	margin: 0.50em 0;
 	transition: transform 0.3s, opacity 0.3s;
 	transition-timing-function: ease-in;
 }
+
+/* .global-menu__item:not(:last-child) {
+	margin-bottom: 40px;
+} */
 
 .global-menu__item--demo-2:nth-child(odd) {
 	transform: translateY(-100%) rotate(10deg);
@@ -412,6 +417,7 @@ a.demo--current {
 .global-menu__item:hover {
 	color: var(--color-menu-hover);
 }
+
 
 .global-menu__item.is-opened {
 	opacity: 1;
@@ -666,7 +672,12 @@ a.demo--current {
 }
 
 .shape-overlays.is-opened {
+
+	background: url(../images/Ellipse22-1.png);
 	pointer-events: auto;
+	/* background-repeat: no-repeat; */
+	/* background: url(../images/Ellipse22-1.png); */
+	/* background-color: aqua */
 }
 
 .shape-overlays__path:nth-of-type(1) {
@@ -683,9 +694,11 @@ a.demo--current {
 
 .shape-overlays__path:nth-of-type(4) {
 	fill: var(--path-fill-4);
+	/* background-color: red;
+	opacity: 0.5; */
 }
 
-@-webkit-keyframes intervalHamburgerBorder {
+/* @-webkit-keyframes intervalHamburgerBorder {
 	0% {
 		opacity: 1;
 		-webkit-transform: scale(1);
@@ -717,7 +730,7 @@ a.demo--current {
 		-webkit-transform: scale(1.6);
 		transform: scale(1.6);
 	}
-}
+} */
 
 .hamburger {
 	width: 64px;
@@ -745,8 +758,8 @@ a.demo--current {
 	top: 0;
 	left: 0;
 	pointer-events: none;
-	border: 4px solid var(--button-circle);
-	border-radius: 50%;
+	/* border: 4px solid var(--button-circle);
+	border-radius: 50%; */
 	-webkit-animation-duration: 1.2s;
 	animation-duration: 1.2s;
 	-webkit-animation-name: intervalHamburgerBorder;
@@ -1030,7 +1043,7 @@ a.demo--current {
 	.content {
 		height: auto;
 		min-height: 0;
-		padding-bottom: 10em;
+		/* padding-bottom: 10em; */
 		flex-direction: column;
 	}
 	.content--fixed {
