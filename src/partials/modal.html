@@ -1,0 +1,69 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close" data-modal-close>
+      <svg class="icon-close"></svg>
+    </button>
+    <form action="#">
+      <div class="form-padding">
+        <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+        <div class="modal-field">
+          <label class="form-label"
+            ><span class="label-text">Имя</span>
+            <span class="input-wrap">
+              <input class="form-input" type="text" name="user-name" required />
+              <svg class="form-icons"></svg>
+            </span>
+          </label>
+        </div>
+        <div class="modal-field">
+          <label class="form-label"
+            ><span class="label-text">Телефон</span>
+            <span class="input-wrap">
+              <input class="form-input" type="tel" name="user-tel" required />
+              <svg class="form-icons"></svg>
+            </span>
+          </label>
+        </div>
+        <div class="modal-field">
+          <label class="form-label"
+            ><span class="label-text">Почта</span>
+            <span class="input-wrap">
+              <input class="form-input" type="email" name="user-email" />
+              <svg class="form-icons"></svg>
+            </span>
+          </label>
+        </div>
+        <div class="modal-textarea">
+          <label class="form-label"
+            ><span class="label-text">Комментарий</span>
+            <textarea
+              class="form-textarea"
+              name="comment "
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+        </div>
+        <div class="Modal-chekbox">
+          <input
+            type="checkbox"
+            class="form-check visually-hidden"
+            name="policy"
+            value="yes"
+            id="form-check"
+            required
+          />
+          <label for="form-check" class="check-text">
+            <span class="check-text__svg">
+              <svg class="icon-check"></svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю
+            <a href="" class="check-link">Условия договора</a>
+          </label>
+        </div>
+        <button type="submit" class="form-submit-button">
+          <span class="form-button-text">Отправить</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
