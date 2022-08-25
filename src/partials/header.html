@@ -1,51 +1,131 @@
-<header class="header overlay">
-  <div class="container">
-    <nav class="navigation">
-      <p class="logo">OLYA LUTSO</p>
-      <div class="header__right">
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="humb-icon" width="40" height="25">
-            <use href="../src/images/sprite.svg#icon-burger"></use>
+<header class="header">
+  <div class="content overlay content--demo-3 container">
+    <div class="">
+      <nav class="navigation">
+        <div class="header_icons">
+          <svg class="instagram-svg" width="30" height="30">
+            <use href="./images/spryte2.svg#icon-instagram"></use>
           </svg>
-        </button>
+          <svg class="instagram-svg" width="30" height="30">
+            <use href="./images/spryte2.svg#telegram_icon"></use>
+          </svg>
+        </div>
+        <div class="header_menu">
+          <a class="header-menu__item" href="#">ПРО МЕНЕ</a>
+          <a class="header-menu__item" href="#">ПЕРЕВАГИ</a>
+          <a class="header-menu__item" href="#">ПОСЛУГИ</a>
+        </div>
+        <p class="logo">OLYA LUTSO</p>
+        <div class="header_menu">
+          <a class="header-menu__item" href="#">ВІДГУКИ</a>
+          <a class="header-menu__item" href="#">INSTAGRAM</a>
+          <a class="header-menu__item" href="#">КОНТАКТИ</a>
+        </div>
+        <div class="hamburger">
+          <a href="#" class="menu-btn">
+            <span></span>
+          </a>
+        </div>
+      </nav>
+
+      <section class="section__hero">
+        <div class="hero__container">
+          <picture class="hero__picture">
+            <source
+              width="100"
+              height="111"
+              srcset="
+                ./images/personal-stylist-desktop-1x.png 1x,
+                ./images/personal-stylist-desktop-2x.png 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/personal-stylist-tablet-1x.png 1x,
+                ./images/personal-stylist-tablet-2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/personal-stylist-mob-1x.png 1x,
+                ./images/personal-stylist-mob-2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="personal__stylist-picture"
+              src="./images/personal-stylist-mob-1x.png"
+              alt=" personal stylist uzhgorod"
+            />
+          </picture>
+          <div class="hero__content_center">
+            <h1 class="hero__title">ПЕРСОНАЛЬНИЙ СТИЛІСТ</h1>
+            <h2 class="hero__title-2">ПЕРСОНАЛЬНИЙ СТИЛІСТ</h2>
+          </div>
+
+          <div class="hero__container-title">
+            <span class="hero__title-3"
+              >Якщо Ви тут, то прагнете змін, які підкреслять Вашу
+              індивідуальність</span
+            >
+            <div class="hero__container-text">
+              <svg class="arrow-down" width="54" height="54">
+                <use
+                  href="./images/spryte2.svg#icon-iconmonstr-arrow-down-circle-thin"
+                ></use>
+              </svg>
+              <span class="hero__text"
+                >Збережу ваші кошти <br />та нервові клітини</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <img
+      class="overlay_4"
+      src="./images/Ellipse20.svg"
+      width="100%"
+      alt="image description"
+    />
+    <img
+      class="overlay_5"
+      src="./images/Ellipse2.svg"
+      width="100%"
+      alt="image description"
+    />
+    <div class="global-menu">
+      <div class="global-menu__wrap">
+        <a class="global-menu__item global-menu__item--demo-3" href="#"
+          >ПРО МЕНЕ</a
+        >
+        <a class="global-menu__item global-menu__item--demo-3" href="#"
+          >ПЕРЕВАГИ</a
+        >
+        <a class="global-menu__item global-menu__item--demo-3" href="#"
+          >ПОСЛУГИ</a
+        >
+        <a class="global-menu__item global-menu__item--demo-3" href="#"
+          >ВІДГУКИ</a
+        >
+        <a class="global-menu__item global-menu__item--demo-3" href="#"
+          >INSTAGRAM</a
+        >
+        <a class="global-menu__item global-menu__item--demo-3" href="#"
+          >КОНТАКТИ</a
+        >
       </div>
-    </nav>
-    <section class="section__hero">
-      <div>
-        <h1 class="hero__title">ПЕРСОНАЛЬНИЙ СТИЛІСТ</h1>
-        <picture>
-          <source
-            srcset="
-              ./images/personal-stylist-desktop-1x.png 1x,
-              ./images/personal-stylist-desktop-2x.png 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              ./images/personal-stylist-tablet-1x.png 1x,
-              ./images/personal-stylist-tablet-2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./images/personal-stylist-mob-1x.png 1x,
-              ./images/personal-stylist-mob-2x.png 2x
-            "
-            media="(min-width: 320px)"
-          />
-          <img
-            class="personal__stylist-picture"
-            src="./images/personal-stylist-mob-1x.png"
-            alt=" personal stylist uzhgorod"
-          />
-        </picture>
-      </div>
-    </section>
+    </div>
+    <svg
+      class="shape-overlays"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path class="shape-overlays__path"></path>
+      <path class="shape-overlays__path"></path>
+      <path class="shape-overlays__path"></path>
+    </svg>
   </div>
 </header>
