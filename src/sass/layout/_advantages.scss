@@ -1,0 +1,119 @@
+.advantages__section {
+    padding-bottom: 70px;
+    @media screen and (min-width: 768px) {
+            padding-bottom: 20px;
+        }
+}
+
+
+
+.advantages__title {
+    display: block;
+    width: 206px;
+    font-family: 'Agreverance';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        /* or 100% */
+    
+    
+        /* text */
+    
+        color: #FFFFFF;
+
+        // @media screen and (min-width: 768px) {
+        //         width: 491px;
+        //     }
+}
+
+
+
+.advantages__item {
+    // list-style-type: disc;
+    // display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    /* or 177% */
+
+
+    /* text */
+
+    color: #FFFFFF;
+
+    opacity: 0.8;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 15px;
+    }
+}
+
+
+.advantages__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.advantages__item::before {
+    fill: white;
+    display: inline-flex;
+        content: '';
+    
+        /* Using the background-image and
+                   its related properties to add
+                   the SVG content */
+        background-image: url('../../images/symbol-defs117.svg');
+        background-size: 40px 40px;
+        height: 40px;
+        width: 40px;
+
+}
+
+ 
+.advantages__list {
+    margin-top: 30px;
+}
+
+
+.advantages__picture-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -25px;
+    @media screen and (min-width: 768px) {
+            position: relative;
+        }
+}
+  
+.advantages__picture-1 {
+    margin-right: 90px;
+    // @media screen and (min-width: 768px) {
+    //     position: absolute;
+    //         bottom: -126%;
+    //         right: -4%;
+    //     }
+   
+   
+}   
+
+.advantages__picture-2 {
+    margin-right: 90px;
+    @media screen and (min-width: 768px) {
+            position: absolute;
+            bottom: -46%;
+                right: -9%;
+        }
+}
+.advantages__picture-3 {
+    @media screen and (min-width: 768px) {
+        position: absolute;
+            top: 114%;
+                left: 1%;
+    }
+}
