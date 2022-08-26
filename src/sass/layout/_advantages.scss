@@ -2,6 +2,9 @@
     padding-bottom: 70px;
     @media screen and (min-width: 768px) {
             padding-bottom: 20px;
+            // display: flex;
+            // justify-content: center;
+            margin: 0 auto;
         }
 }
 
@@ -22,15 +25,29 @@
     
         color: #FFFFFF;
 
-        // @media screen and (min-width: 768px) {
-        //         width: 491px;
-        //     }
+        @media screen and (min-width: 768px) {
+            
+            width: 491px;
+            // justify-content: start;
+                font-size: 40px;
+                line-height: 40px;
+            }
+                         @media screen and (min-width: 1024px) {
+            
+                            //  width: 491px;
+                            //  // justify-content: start;
+                            //  font-size: 40px;
+                            //  line-height: 40px;
+                         }
+                         
 }
 
 
 
 .advantages__item {
-    // list-style-type: disc;
+    // width: 270px;
+    margin: 0 auto;
+    list-style-type: disc;
     // display: inline-block;
     font-family: 'Montserrat';
     font-style: normal;
@@ -45,8 +62,20 @@
     color: #FFFFFF;
 
     opacity: 0.8;
+    text-align: start;
+   
+        @media screen and (min-width: 768px) {
+                width: 509px;
+  
+                font-size: 13px;
+            }
 
     @media screen and (min-width: 1024px) {
+        font-size: 11px;
+        line-height: 22px;
+        // justify-self: center;
+    width: 71.14%;
+        height: 100%;
         font-size: 11px;
         line-height: 22px;
     }
@@ -56,38 +85,54 @@
     }
 }
 
+.instagram-svg {
+    fill: #FFFFFF;
+    opacity: 0.8;
+}
+
 
 .advantages__item:not(:last-child) {
     margin-bottom: 10px;
 }
-.advantages__item::before {
-    fill: white;
-    display: inline-flex;
-        content: '';
-    
-        /* Using the background-image and
-                   its related properties to add
-                   the SVG content */
-        background-image: url('../../images/symbol-defs117.svg');
-        background-size: 40px 40px;
-        height: 40px;
-        width: 40px;
 
-}
 
  
 .advantages__list {
     margin-top: 30px;
+        padding-left: 4%;
+            @media screen and (min-width: 768px) {
+            
+                    padding-left: 0%;
+                }
+
+    @media screen and (min-width: 1024px) {
+        
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0px;
+        align-items: center;
+        justify-items: center;
+        // grid-auto-rows: minm ax(100px, auto);
+        grid-gap: 0px;
+            grid-template-columns: repeat(2, 1fr);
+            place-items: SELF-END;
+            display: grid;
+        }
+
 }
 
-
+.advantages__position {
+    @media screen and (min-width: 768px) {
+            position: relative;
+        }
+}
 .advantages__picture-div {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: -25px;
     @media screen and (min-width: 768px) {
-            position: relative;
+        margin-bottom: 0px;
         }
 }
   
@@ -97,23 +142,48 @@
     //     position: absolute;
     //         bottom: -126%;
     //         right: -4%;
-    //     }
+        
+        @media screen and (min-width: 768px) {
+            margin-right: 0px;  
+            // display: block;
+                position: absolute;
+                    bottom: 0%;
+                        right: 16%;
+        }
+        @media screen and (min-width: 1024px) {
+            bottom: 30%;
+                right: 49%;
+        }
+            
+    }
    
-   
-}   
+    
 
 .advantages__picture-2 {
     margin-right: 90px;
     @media screen and (min-width: 768px) {
+            margin-right: 0px;
             position: absolute;
-            bottom: -46%;
-                right: -9%;
+top: -79px;
+    right: 6%;
         }
+
+@media screen and (min-width: 1024px) {
+    top: -79px;
+    right: 6%;
+}
+           
 }
 .advantages__picture-3 {
     @media screen and (min-width: 768px) {
         position: absolute;
-            top: 114%;
+            top: 35%;
                 left: 1%;
     }
+
+  @media screen and (min-width: 1024px) {
+top: 24%;
+    right: 0%;
+  }
+       
 }

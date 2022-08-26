@@ -51,8 +51,8 @@
     font-family: 'Agreverance';
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
-        line-height: 40px;
+font-size: 30px;
+    line-height: 30px;
         /* identical to box height, or 100% */
     
         letter-spacing: 0.05em;
@@ -61,6 +61,12 @@
     
         color: #FFFFFF;
         margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 40px;
+            line-height: 40px;
+        }
+        
 }
 .aboutMe__flex {
     display: flex;
