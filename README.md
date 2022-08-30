@@ -2,8 +2,8 @@
 
 # Parcel template
 
-Этот проект был создан при помощи Parcel. Для знакомства и настройки
-дополнительных возможностей [обратись к документации](https://parceljs.org/).
+This project was created with Parcel. For dating and setting additional features
+[refer to documentation](https://parceljs.org/).
 
 ## Подготовка нового проекта
 
