@@ -1,69 +1,45 @@
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="modal-close" data-modal-close>
-      <svg class="icon-close"></svg>
-    </button>
-    <form action="#">
-      <div class="form-padding">
-        <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-        <div class="modal-field">
-          <label class="form-label"
-            ><span class="label-text">Имя</span>
-            <span class="input-wrap">
-              <input class="form-input" type="text" name="user-name" required />
-              <svg class="form-icons"></svg>
-            </span>
-          </label>
+<div class="modal">
+  <div class="modal-head">
+    <a href="#" class="arrow">
+      <svg class="arrow-left-svg" width="10" height="25">
+        <use href="./images/spryte.svg#icon-arrow-left"></use>
+      </svg>
+    </a>
+
+    <div class="hamburger">
+      <a href="#" class="menu-btn">
+        <span></span>
+      </a>
+    </div>
+  </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slider-content">
+          <h2 class="slide-title">
+            <span class="number">01</span>
+            КОНСУЛЬТАЦІЯ
+          </h2>
+          <p class="slide-underTitle">Формат - онлайн // Тривалість - 1 год</p>
+          <h3 class="slide-knowledge">Які знання я отримаю?</h3>
+          <p class="slide-text">
+            тип фігури та корекційні методики лінії зовнішності та що пасує саме
+            Вам тканини, довжини та рекомендовані фасони одягу який одяг додає
+            об‘єм, а який робить стрункішим помилки на шляху до ідеального
+            гардеробу аналіз мудборду відповіді на всі запитання, які виникнуть
+            в процесі консультації
+          </p>
+          <h3 class="slide-knowledge">Як все проходить?</h3>
+          <p class="slide-text">
+            Я надсилаю анкету, яку Ви заповнюєте, щоб ми познайомилися ближче і
+            я краще зрозуміла Ваш запит. Зустрічаємося онлайн (Zoom), де я
+            демонструю презентацію з рекомендаціями, прописаними індивідуально
+            для Вас та відповідаю на всі запитання. Після завершення
+            консультації Ви отримаєте файл з моїми рекомендаціями та знання, які
+            стануть фундаментом роботи над власним стилем.
+          </p>
         </div>
-        <div class="modal-field">
-          <label class="form-label"
-            ><span class="label-text">Телефон</span>
-            <span class="input-wrap">
-              <input class="form-input" type="tel" name="user-tel" required />
-              <svg class="form-icons"></svg>
-            </span>
-          </label>
-        </div>
-        <div class="modal-field">
-          <label class="form-label"
-            ><span class="label-text">Почта</span>
-            <span class="input-wrap">
-              <input class="form-input" type="email" name="user-email" />
-              <svg class="form-icons"></svg>
-            </span>
-          </label>
-        </div>
-        <div class="modal-textarea">
-          <label class="form-label"
-            ><span class="label-text">Комментарий</span>
-            <textarea
-              class="form-textarea"
-              name="comment "
-              placeholder="Введите текст"
-            ></textarea>
-          </label>
-        </div>
-        <div class="Modal-chekbox">
-          <input
-            type="checkbox"
-            class="form-check visually-hidden"
-            name="policy"
-            value="yes"
-            id="form-check"
-            required
-          />
-          <label for="form-check" class="check-text">
-            <span class="check-text__svg">
-              <svg class="icon-check"></svg>
-            </span>
-            Соглашаюсь с рассылкой и принимаю
-            <a href="" class="check-link">Условия договора</a>
-          </label>
-        </div>
-        <button type="submit" class="form-submit-button">
-          <span class="form-button-text">Отправить</span>
-        </button>
       </div>
-    </form>
+    </div>
   </div>
 </div>
