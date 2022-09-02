@@ -1,0 +1,213 @@
+.form__title {
+font-family: 'AGReverance';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    /* or 100% */
+
+
+    /* text */
+
+    color: #FFFFFF;
+    margin-bottom: 30px;
+     @media screen and (min-width: 768px) {
+                font-size: 40px;
+                line-height: 40px;
+                letter-spacing: 0.05em;
+            }
+}
+
+.form__name {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 23px;
+     
+        /* identical to box height, or 177% */
+    
+    
+        /* text */
+    
+        color: #FFFFFF;
+        margin-bottom: 7px;
+        display: flex;
+
+        @media screen and (min-width: 768px) {
+                font-size: 14px;
+line-height: 24px;
+            }
+    
+
+}
+.form__name::placeholder {
+ margin-left: 10px;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 23px;
+        @media screen and (min-width: 768px) {
+                font-size: 14px;
+line-height: 24px;
+            }
+}
+
+.form__radio {
+    display: flex;
+    // @media screen and (min-width: 768px) {
+    //       justify-content: center;
+    //     }
+}
+.form__input {
+    padding-left: 10px;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+ opacity: 0.9;
+            background: transparent;
+                color: #FFFFFF;
+                background-color: rgba(255, 255, 255, 0.05);
+                background: rgba(255, 255, 255, 0.05);
+                    opacity: 0.4;
+
+                    backdrop-filter: blur(5px);
+                    width: 100%;
+                    height: 40px;
+                    @media screen and (min-width: 375px) {
+                            width: 280px;
+                        }
+                                                 @media screen and (min-width: 768px) {
+                                                box-sizing: border-box;
+                                                     width: 414px;
+                                                     height: 47px;
+                                                       padding-left: 30px;
+                                                 }
+                        
+}
+
+.form__phone {
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 23px;
+            /* identical to box height, or 177% */
+        
+        
+            /* text */
+        
+            color: #FFFFFF;
+    display: flex;
+    @media screen and (min-width: 768px) {
+                font-size: 14px;
+line-height: 24px;
+            }
+}
+
+.form__messenger {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+    
+    
+        /* text */
+    
+        color: #FFFFFF;
+    
+        opacity: 0.9;
+        margin-bottom: 20px;
+         @media screen and (min-width: 768px) {
+            font-size: 16px;
+line-height: 28px;
+
+            }
+}
+.form__messenger-telegram {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 23px;
+        /* identical to box height, or 177% */
+    
+    
+        /* text */
+    
+        color: #FFFFFF;
+    
+        opacity: 0.9;
+}
+
+.btn {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+    
+        text-align: center;
+        text-transform: uppercase;
+    
+        /* text */
+    
+        color: #FFFFFF;
+    
+        opacity: 0.9;
+        background-color: black;
+        border: 0.5px solid #C4C4C4;
+        margin-bottom: 30px;
+}
+
+
+.form__rights {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 20px;
+        /* or 167% */
+    
+    
+        /* text */
+    
+        color: #FFFFFF;
+    
+        opacity: 0.3;
+}
+.form__radio-telegram {
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+
+.form__input-name {
+    margin-bottom: 7px;
+    
+     @media screen and (min-width: 768px) {
+            display: grid;
+            justify-content: center;
+        }
+  
+}
+
+.form__input-phone {
+    margin-bottom: 34px;
+      @media screen and (min-width: 768px) {
+            display: grid;
+            justify-content: center;
+        }
+}
+
+.form__form { 
+    @media screen and (min-width: 768px) {
+        background: rgba(47, 47, 47, 0.3);
+            backdrop-filter: blur(50px);
+            padding-top: 60px;
+            padding-bottom: 60px;
+        
+        }
+}
