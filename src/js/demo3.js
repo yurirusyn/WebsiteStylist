@@ -109,7 +109,6 @@ class ShapeOverlays {
   const elmOverlay = document.querySelector('.shape-overlays');
   const icon = document.querySelector('.menu-btn');
   const overlay = new ShapeOverlays(elmOverlay);
-  console.log('icon :>> ', icon);
 
   elmHamburger.addEventListener('click', () => {
     if (overlay.isAnimating) {
