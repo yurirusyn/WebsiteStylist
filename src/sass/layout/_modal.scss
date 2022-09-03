@@ -20,7 +20,7 @@
   width: 100%;
   height: 100%;
   z-index: 1000;
-  padding: 50px;
+  padding: 50px 20px;
 
   background-color: #1c1c1c;
 }
@@ -93,4 +93,8 @@
   color: #ffffff;
 
   opacity: 0.9;
+}
+
+.slide-text {
+  list-style: lower-alpha;
 }
