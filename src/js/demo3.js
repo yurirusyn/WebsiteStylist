@@ -109,7 +109,9 @@ class ShapeOverlays {
   const elmOverlay = document.querySelector('.shape-overlays');
   const icon = document.querySelector('.menu-btn');
   const overlay = new ShapeOverlays(elmOverlay);
-  console.log('icon :>> ', icon);
+  const closeMenu = document.querySelector('.global-menu__wrap');
+
+  console.log('icon :>> ', closeMenu);
 
   elmHamburger.addEventListener('click', () => {
     if (overlay.isAnimating) {
@@ -127,6 +129,25 @@ class ShapeOverlays {
       elmHamburger.classList.remove('is-opened-navi');
       icon.classList.remove('menu-btn_active');
       overlayGlobalMenu.classList.remove('overlay-global_menu');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
+
+  closeMenu.addEventListener('click', () => {
+    if (overlay.isAnimating) {
+      return false;
+    }
+    elmHamburger.classList.remove('is-opened-navi');
+    icon.classList.remove('menu-btn_active');
+
+    overlay.close();
+    if (overlay.isOpened === true) {
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.remove('is-opened');
       }

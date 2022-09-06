@@ -1,67 +1,69 @@
-<section class="form">
+<section id="id__from" class="form">
   <div class="container">
     <h2 class="form__title">Залишіть заявку на безоплатну консультацію</h2>
-    <form class="form__form" action="results.html" method="GET">
-      <div class="form__input-name">
-        <label class="form__name" for="name">Ваше ім’я</label>
-        <input
-          class="form__input"
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Уведіть ім’я"
-          required
-        />
-      </div>
-      <div class="form__input-phone">
-        <label class="form__phone" for="phone">Ваш телефон</label>
-        <input
-          id="Search"
-          class="form__input-phone-1 form__input"
-          type="tel"
-          name="phone"
-          id="phone"
-          onfocus="this.value = this.value"
-          placeholder="+380 (__) ___-__-__"
-          pattern="^(?:\+38)?(?:\(044\)[ .-]?[0-9]{3}[ .-]?[0-9]{2}[ .-]?[0-9]{2}|044[ .-]?[0-9]{3}[ .-]?[0-9]{2}[ .-]?[0-9]{2}|044[0-9]{7})$"
-        />
-        <p class="form__messenger">Оберіть зручний месенджер</p>
-        <div class="form__radio">
-          <div class="radio">
-            <input
-              id="Telegram"
-              type="radio"
-              name="messengers"
-              value="Telegram"
-              checked
-            />
-            <label for="Telegram" class="radio-label">Telegram</label>
+    <div class="form__desktop-flex">
+      <form class="form__form" action="results.html" method="GET">
+        <div class="form__input-name">
+          <label class="form__name" for="name">Ваше ім’я</label>
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Уведіть ім’я"
+            required
+          />
+        </div>
+        <div class="form__input-phone">
+          <label class="form__phone" for="phone">Ваш телефон</label>
+          <input
+            id="Search"
+            class="form__input-phone-1 form__input"
+            type="tel"
+            name="phone"
+            id="phone"
+            onfocus="this.value = this.value"
+            placeholder="+380 (__) ___-__-__"
+            pattern="^(?:\+38)?(?:\(044\)[ .-]?[0-9]{3}[ .-]?[0-9]{2}[ .-]?[0-9]{2}|044[ .-]?[0-9]{3}[ .-]?[0-9]{2}[ .-]?[0-9]{2}|044[0-9]{7})$"
+          />
+          <p class="form__messenger">Оберіть зручний месенджер</p>
+          <div class="form__radio">
+            <div class="radio">
+              <input
+                id="Telegram"
+                type="radio"
+                name="messengers"
+                value="Telegram"
+                checked
+              />
+              <label for="Telegram" class="radio-label">Telegram</label>
+            </div>
+
+            <div class="radio">
+              <input id="Viber" type="radio" name="messengers" value="Viber" />
+              <label for="Viber" class="radio-label">Viber</label>
+            </div>
           </div>
-
-          <div class="radio">
-            <input id="Viber" type="radio" name="messengers" value="Viber" />
-            <label for="Viber" class="radio-label">Viber</label>
-          </div>
         </div>
-      </div>
-      <!-- </div> -->
-
-      <!-- <div class="container1">
-        <div class="radio">
-          <input id="radio-1" name="radio" type="radio" checked />
-          <label for="radio-1" class="radio-label">Checked</label>
-        </div>
-
-        <div class="radio">
-          <input id="radio-2" name="radio" type="radio" />
-          <label for="radio-2" class="radio-label">Unchecked</label>
-        </div>
-      </div> -->
-
-      <button class="btn" type="submit">зв’яжіться зі мною</button>
-      <p class="form__rights">
-        Заповнюючи цю форму, Ви погоджуєтесь на обробку персональних даних
-      </p>
-    </form>
+        <button class="btn" type="submit">зв’яжіться зі мною</button>
+        <p class="form__rights">
+          Заповнюючи цю форму, Ви погоджуєтесь на обробку персональних даних
+        </p>
+      </form>
+      <picture class="form__picture">
+        <source
+          srcset="
+            ./images/form/form-desktop-1x.png 1x,
+            ./images/form/form-desktop-2x.png 2x
+          "
+          media="(min-width: 1024px)"
+        />
+        <img
+          class="form__picture-img"
+          src="./images/form/form-desktop-1x.png"
+          alt=" personal stylist uzhgorod"
+        />
+      </picture>
+    </div>
   </div>
 </section>
