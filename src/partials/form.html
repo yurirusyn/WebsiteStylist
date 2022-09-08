@@ -2,29 +2,36 @@
   <div class="container">
     <h2 class="form__title">Залишіть заявку на безоплатну консультацію</h2>
     <div class="form__desktop-flex">
-      <form class="form__form" action="results.html" method="GET">
+      <form
+        class="form__form"
+        action="results.html"
+        role="form"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="submitted = true;"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSefCbQs6vBE3nUlPJpB-b-_p-m6lxZA1EUCZsYWkb6JyUIrwQ/formResponse
+"
+      >
         <div class="form__input-name">
           <label class="form__name" for="name">Ваше ім’я</label>
           <input
+            required
             class="form__input"
             type="text"
-            name="name"
+            name="entry.565994647"
             id="name"
             placeholder="Уведіть ім’я"
-            required
           />
         </div>
         <div class="form__input-phone">
           <label class="form__phone" for="phone">Ваш телефон</label>
           <input
+            required
             id="Search"
             class="form__input-phone-1 form__input"
             type="tel"
-            name="phone"
-            id="phone"
-            onfocus="this.value = this.value"
+            name="entry.760238429"
             placeholder="+380 (__) ___-__-__"
-            pattern="^(?:\+38)?(?:\(044\)[ .-]?[0-9]{3}[ .-]?[0-9]{2}[ .-]?[0-9]{2}|044[ .-]?[0-9]{3}[ .-]?[0-9]{2}[ .-]?[0-9]{2}|044[0-9]{7})$"
           />
           <p class="form__messenger">Оберіть зручний месенджер</p>
           <div class="form__radio">
@@ -32,7 +39,7 @@
               <input
                 id="Telegram"
                 type="radio"
-                name="messengers"
+                name="entry.299806277_sentinel"
                 value="Telegram"
                 checked
               />
@@ -45,7 +52,9 @@
             </div>
           </div>
         </div>
-        <button class="btn" type="submit">зв’яжіться зі мною</button>
+        <button class="btn" type="submit" id="submit">
+          зв’яжіться зі мною
+        </button>
         <p class="form__rights">
           Заповнюючи цю форму, Ви погоджуєтесь на обробку персональних даних
         </p>
