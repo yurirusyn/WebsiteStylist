@@ -197,7 +197,7 @@
     height: 40px;
   }
   @media screen and (min-width: 1024px) {
-    margin-bottom: 30px;
+    margin-bottom: 4%;
   }
 }
 
@@ -230,7 +230,7 @@
   }
 
   @media screen and (min-width: 1024px) {
-    margin-bottom: 20px;
+    margin-bottom: 1%;
   }
 }
 
@@ -242,6 +242,9 @@
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 5%;
   }
 }
 
@@ -271,12 +274,16 @@
     margin-bottom: 34px;
   }
   @media screen and (min-width: 1024px) {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
   }
 }
 .form__desktop-flex {
   @media screen and (min-width: 1024px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2.5%;
+    justify-items: center;
+    // align-items: center;
   }
 }
 
@@ -288,6 +295,7 @@
 }
 
 .form__picture-img {
+  //   margin-left: 35px;
   border-radius: 0px 150px 0px 0px;
 }
 
