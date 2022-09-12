@@ -9,10 +9,6 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  /* or 100% */
-
-  /* text */
-
   color: #ffffff;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
@@ -28,11 +24,6 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 23px;
-
-  /* identical to box height, or 177% */
-
-  /* text */
-
   color: #ffffff;
   margin-bottom: 7px;
   display: flex;
@@ -46,6 +37,7 @@
     margin-bottom: 6px;
   }
 }
+
 .form__name::placeholder {
   margin-left: 10px;
   font-family: 'Montserrat';
@@ -129,12 +121,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  /* identical to box height, or 143% */
-
-  /* text */
-
   color: #ffffff;
-
   opacity: 0.9;
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
@@ -148,12 +135,7 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 23px;
-  /* identical to box height, or 177% */
-
-  /* text */
-
   color: #ffffff;
-
   opacity: 0.9;
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -207,14 +189,10 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 20px;
-  /* or 167% */
-
-  /* text */
-
   color: #ffffff;
-
   opacity: 0.3;
 }
+
 .form__radio-telegram {
   margin-right: 10px;
   margin-bottom: 30px;
@@ -400,4 +378,8 @@ $color2: #c4c4c4;
       }
     }
   }
+}
+
+.form__input-messager {
+  visibility: hidden;
 }
