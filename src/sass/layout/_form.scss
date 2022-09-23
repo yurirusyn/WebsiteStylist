@@ -1,213 +1,385 @@
+.form {
+  @media screen and (min-width: 375px) {
+  }
+}
+
 .form__title {
-font-family: 'AGReverance';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 30px;
-    /* or 100% */
-
-
-    /* text */
-
-    color: #FFFFFF;
-    margin-bottom: 30px;
-     @media screen and (min-width: 768px) {
-                font-size: 40px;
-                line-height: 40px;
-                letter-spacing: 0.05em;
-            }
+  font-family: 'AGReverance';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+  }
 }
 
 .form__name {
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 23px;
-     
-        /* identical to box height, or 177% */
-    
-    
-        /* text */
-    
-        color: #FFFFFF;
-        margin-bottom: 7px;
-        display: flex;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-bottom: 7px;
+  display: flex;
 
-        @media screen and (min-width: 768px) {
-                font-size: 14px;
-line-height: 24px;
-            }
-    
-
+  @media screen and (min-width: 768px) {
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 6px;
+  }
 }
+
 .form__name::placeholder {
- margin-left: 10px;
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 23px;
-        @media screen and (min-width: 768px) {
-                font-size: 14px;
-line-height: 24px;
-            }
+  margin-left: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .form__radio {
-    display: flex;
-    // @media screen and (min-width: 768px) {
-    //       justify-content: center;
-    //     }
+  display: flex;
+  margin-left: -6%;
+  // justify-content: start;
+  // @media screen and (min-width: 768px) {
+  //       justify-content: center;
+  //     }
 }
-.form__input {
-    padding-left: 10px;
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
- opacity: 0.9;
-            background: transparent;
-                color: #FFFFFF;
-                background-color: rgba(255, 255, 255, 0.05);
-                background: rgba(255, 255, 255, 0.05);
-                    opacity: 0.4;
 
-                    backdrop-filter: blur(5px);
-                    width: 100%;
-                    height: 40px;
-                    @media screen and (min-width: 375px) {
-                            width: 280px;
-                        }
-                                                 @media screen and (min-width: 768px) {
-                                                box-sizing: border-box;
-                                                     width: 414px;
-                                                     height: 47px;
-                                                       padding-left: 30px;
-                                                 }
-                        
+.form__checkmark {
+  width: 20px;
+  height: 20px;
+}
+
+.form__input {
+  padding-left: 10px;
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  opacity: 0.9;
+  background: transparent;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
+  opacity: 0.4;
+
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 40px;
+  @media screen and (min-width: 375px) {
+    width: 280px;
+  }
+  @media screen and (min-width: 768px) {
+    box-sizing: border-box;
+    width: 414px;
+    height: 47px;
+    padding-left: 30px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 360px;
+    height: 40px;
+  }
 }
 
 .form__phone {
-        font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 23px;
-            /* identical to box height, or 177% */
-        
-        
-            /* text */
-        
-            color: #FFFFFF;
-    display: flex;
-    @media screen and (min-width: 768px) {
-                font-size: 14px;
-line-height: 24px;
-            }
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  /* identical to box height, or 177% */
+
+  /* text */
+
+  color: #ffffff;
+  display: flex;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 6px;
+  }
 }
 
 .form__messenger {
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 20px;
-        /* identical to box height, or 143% */
-    
-    
-        /* text */
-    
-        color: #FFFFFF;
-    
-        opacity: 0.9;
-        margin-bottom: 20px;
-         @media screen and (min-width: 768px) {
-            font-size: 16px;
-line-height: 28px;
-
-            }
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 .form__messenger-telegram {
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 23px;
-        /* identical to box height, or 177% */
-    
-    
-        /* text */
-    
-        color: #FFFFFF;
-    
-        opacity: 0.9;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: #ffffff;
+  opacity: 0.9;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .btn {
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
-        /* identical to box height, or 171% */
-    
-        text-align: center;
-        text-transform: uppercase;
-    
-        /* text */
-    
-        color: #FFFFFF;
-    
-        opacity: 0.9;
-        background-color: black;
-        border: 0.5px solid #C4C4C4;
-        margin-bottom: 30px;
-}
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.9;
+  background-color: black;
+  border: 0.5px solid #c4c4c4;
+  margin-bottom: 10px;
 
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  @media screen and (min-width: 375px) {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 414px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 360px;
+    height: 40px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 4%;
+  }
+}
 
 .form__rights {
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 20px;
-        /* or 167% */
-    
-    
-        /* text */
-    
-        color: #FFFFFF;
-    
-        opacity: 0.3;
-}
-.form__radio-telegram {
-    margin-right: 10px;
-    margin-bottom: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.3;
 }
 
+.form__radio-telegram {
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
 
 .form__input-name {
-    margin-bottom: 7px;
-    
-     @media screen and (min-width: 768px) {
-            display: grid;
-            justify-content: center;
-        }
-  
+  margin-bottom: 7px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 23px;
+    display: grid;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 1%;
+  }
 }
 
 .form__input-phone {
-    margin-bottom: 34px;
-      @media screen and (min-width: 768px) {
-            display: grid;
-            justify-content: center;
-        }
+  margin-bottom: 34px;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 5%;
+  }
 }
 
-.form__form { 
-    @media screen and (min-width: 768px) {
-        background: rgba(47, 47, 47, 0.3);
-            backdrop-filter: blur(50px);
-            padding-top: 60px;
-            padding-bottom: 60px;
-        
+.form__form {
+  display: grid;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    background: rgba(47, 47, 47, 0.3);
+    backdrop-filter: blur(50px);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  //   @media screen and (min-width: 1024px) {
+  //     padding-top: 10px;
+  //     padding-bottom: 10px;
+  //   }
+}
+
+.form__input-phone-1 {
+  margin-bottom: 34px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 2%;
+  }
+}
+.form__desktop-flex {
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2.5%;
+    justify-items: center;
+    // align-items: center;
+  }
+}
+
+.form__picture {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: inline-block;
+  }
+}
+
+.form__picture-img {
+  //   margin-left: 35px;
+  border-radius: 0px 150px 0px 0px;
+}
+
+// ----------------------------------------------------------------
+
+$color1: #1c1c1c;
+$color2: #c4c4c4;
+
+// .container1 {
+//     display: grid;
+//     justify-content: start;
+// }
+.radio {
+  // margin: 0.5rem;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  input[type='radio'] {
+    // position: absolute;
+    opacity: 0;
+    // vertical-align: middle;
+
+    + .radio-label {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 23px;
+      /* identical to box height, or 177% */
+
+      /* text */
+
+      color: #ffffff;
+
+      opacity: 0.9;
+      align-items: center;
+
+      @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      // text-align: center;
+      &:before {
+        content: '';
+        background: $color1;
+        border-radius: 100%;
+        // border: 1px solid darken(#C4C4C4, 25%);
+        border: 1px solid #c4c4c4;
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        // position: relative;
+        // top: -0.2em;
+        margin-right: 1em;
+        vertical-align: middle;
+        cursor: pointer;
+        text-align: center;
+        transition: all 250ms ease;
+        @media screen and (min-width: 768px) {
+          width: 1.8em;
+          height: 1.8em;
         }
+      }
+    }
+
+    &:checked {
+      + .radio-label {
+        &:before {
+          background-color: $color2;
+          box-shadow: inset 0 0 0 4px $color1;
+        }
+      }
+    }
+
+    &:focus {
+      + .radio-label {
+        &:before {
+          outline: none;
+          border-color: $color2;
+        }
+      }
+    }
+
+    &:disabled {
+      + .radio-label {
+        &:before {
+          box-shadow: inset 0 0 0 4px $color1;
+          // border-color: darken($color1, 25%);
+          border-color: $color1;
+          background: $color1;
+        }
+      }
+    }
+
+    + .radio-label {
+      &:empty {
+        &:before {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.form__input-messager {
+  visibility: hidden;
 }
