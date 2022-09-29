@@ -1,0 +1,65 @@
+// .lightwidget-widget {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .instagram_lightwidget-desktop {
+//   display: none;
+//   @media screen and (min-width: 1024px) {
+//     display: block;
+//   }
+// }
+
+.instagram_lightwidget-tab {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+.instagram_lightwidget-mob {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+.instagram_lightwidget-desktop {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.instagram__title {
+  padding-top: 70px;
+  margin-bottom: 40px;
+  font-family: 'Agreverance';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  /* identical to box height, or 100% */
+
+  /* text */
+
+  color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    letter-spacing: 0.05em;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 70px;
+  }
+}
