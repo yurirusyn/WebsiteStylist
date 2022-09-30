@@ -30,8 +30,15 @@
   justify-content: space-between;
 }
 
+.arrow {
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  width: 10px;
+  height: 25px;
+  cursor: pointer;
+}
 .arrow-left-svg {
-  margin-right: 29px;
   fill: rgb(255, 255, 255);
 }
 

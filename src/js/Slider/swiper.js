@@ -11,3 +11,17 @@ const swiper = new Swiper('.mySwiper', {
   mousewheel: true,
   keyboard: true,
 });
+
+const modalSlider = new Swiper('.modal-swiper', {
+  cssMode: true,
+  navigation: {
+    nextEl: '.next',
+    prevEl: '.prev',
+  },
+  pagination: {
+    el: '.pagination',
+    clickable: true,
+  },
+  mousewheel: true,
+  keyboard: true,
+});
