@@ -8,6 +8,9 @@ const swiper = new Swiper('.mySwiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  breakpoints: {
+    1280: { slidesPerView: 2 },
+  },
   mousewheel: true,
   keyboard: true,
 });
