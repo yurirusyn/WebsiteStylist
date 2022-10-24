@@ -8,7 +8,8 @@ swiper.on('slideChange', function () {
     arrow.style.display = 'none';
   } else {
     arrow.style.display = 'block';
-    arrow.style.marginTop = '-55px';
+    arrow.style.marginTop = '-47px';
+    arrow.style.marginLeft = '-10px';
     arrow.style.fontSize = '20px';
     arrow.style.color = '#ffffff';
   }
@@ -21,7 +22,7 @@ swiper.on('slideChange', function () {
     arrowNext.style.display = 'none';
   } else {
     arrowNext.style.display = 'block';
-    arrowNext.style.marginTop = '-55px';
+    arrowNext.style.marginTop = '-48px';
     arrowNext.style.fontSize = '20px';
     arrowNext.style.color = '#ffffff';
   }
