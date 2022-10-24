@@ -2,9 +2,9 @@
     padding-bottom: 70px;
     @media screen and (min-width: 768px) {
             padding-bottom: 20px;
-            // display: flex;
-            // justify-content: center;
-            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            // margin: 0 auto;
         }
 }
 
@@ -66,7 +66,7 @@
     text-align: start;
    
         @media screen and (min-width: 768px) {
-                width: 509px;
+                // width: 509px;
   
                 font-size: 13px;
             }
@@ -83,6 +83,7 @@
 
     @media screen and (min-width: 1440px) {
         font-size: 15px;
+        // width: 466px;
     }
 }
 
@@ -103,11 +104,11 @@
         padding-left: 4%;
             @media screen and (min-width: 768px) {
             
-                    padding-left: 0%;
+                    padding-left: 9%;
                 }
 
     @media screen and (min-width: 1024px) {
-        
+        padding-left: 0%;
     display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0px;
@@ -115,9 +116,9 @@
         justify-items: center;
         // grid-auto-rows: minm ax(100px, auto);
         grid-gap: 0px;
-            grid-template-columns: repeat(2, 1fr);
-            place-items: SELF-END;
-            display: grid;
+        grid-template-columns: repeat(2, 0.8fr);
+        place-items: SELF-END;
+        display: grid;
         }
 
 }
