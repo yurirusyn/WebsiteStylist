@@ -1,3 +1,8 @@
+let tabStyleNext = '.arrow__right';
+let tabStylePrev = '.arrow__left';
+
+let nav;
+
 const swiper = new Swiper('.mySwiper', {
   cssMode: true,
   navigation: {
@@ -9,7 +14,26 @@ const swiper = new Swiper('.mySwiper', {
     clickable: true,
   },
   breakpoints: {
-    1280: { slidesPerView: 2 },
+    0: {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    },
+    768: {
+      navigation: {
+        nextEl: '.arrow-right',
+        prevEl: '.arrow-left',
+      },
+    },
+    1280: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      navigation: {
+        nextEl: '.arrow-right',
+        prevEl: '.arrow-left',
+      },
+    },
   },
   mousewheel: true,
   keyboard: true,

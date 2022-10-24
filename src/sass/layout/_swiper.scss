@@ -29,6 +29,9 @@
   justify-content: center;
   bottom: 0;
   height: 10px;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -39,11 +42,21 @@
 
   opacity: 0.1;
   border: 0.5px solid #ffffff;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 40px !important;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .swiper-pagination-bullet-active {
   background-color: rgba(255, 255, 255, 0.5);
   background-repeat: no-repeat;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .swiper-button-prev::after,
@@ -52,9 +65,15 @@
   font-size: 20px;
   margin-right: 20px;
   margin-top: -80px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .swiper-button-next::after {
   margin-left: 18px;
   // margin-top: -105px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
