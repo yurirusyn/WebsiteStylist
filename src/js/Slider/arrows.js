@@ -2,8 +2,9 @@ const arrow = document.getElementsByClassName('swiper-button-prev')[0];
 const arrowNext = document.getElementsByClassName('swiper-button-next')[0];
 arrow.style.display = 'none';
 
-swiper.on('slideChange', function () {
-  const realIndex = swiper.realIndex;
+mainPageSlider.on('slideChange', function () {
+  const realIndex = mainPageSlider.realIndex;
+
   if (realIndex == 0) {
     arrow.style.display = 'none';
   } else {
@@ -15,9 +16,10 @@ swiper.on('slideChange', function () {
   }
 });
 
-swiper.on('slideChange', function () {
-  const realIndex = swiper.realIndex + 1;
-  const lastSlide = swiper.slides.length;
+mainPageSlider.on('slideChange', function () {
+  const realIndex = mainPageSlider.realIndex + 1;
+  const lastSlide = mainPageSlider.slides.length;
+
   if (realIndex === lastSlide) {
     arrowNext.style.display = 'none';
   } else {

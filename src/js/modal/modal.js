@@ -18,12 +18,16 @@ const modalArrow = document.querySelector('.arrow');
 modalArrow.addEventListener('click', e => {
   e.preventDefault();
   modal.style.zIndex = '-1000';
+  const currentModalSlide = modalSlider.realIndex;
+  mainPageSlider.slideTo(currentModalSlide);
 });
 
 openButtonModal.forEach(button =>
   button.addEventListener('click', e => {
     e.preventDefault();
+    const clickedButton = e.target;
     modal.style.zIndex = '1000';
-    console.log('button', button);
+    let buttonIndex = clickedButton.getAttribute('id') - 1;
+    modalSlider.slideTo(buttonIndex);
   })
 );
