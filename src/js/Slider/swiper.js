@@ -1,9 +1,4 @@
-let tabStyleNext = '.arrow__right';
-let tabStylePrev = '.arrow__left';
-
-let nav;
-
-const swiper = new Swiper('.mySwiper', {
+let mainPageSlider = new Swiper('.mySwiper', {
   cssMode: true,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -35,12 +30,10 @@ const swiper = new Swiper('.mySwiper', {
       },
     },
   },
-  mousewheel: true,
   keyboard: true,
 });
 
-const modalSlider = new Swiper('.modal-swiper', {
-  cssMode: true,
+let modalSlider = new Swiper('.modal-swiper', {
   navigation: {
     nextEl: '.next',
     prevEl: '.prev',
@@ -49,6 +42,8 @@ const modalSlider = new Swiper('.modal-swiper', {
     el: '.pagination',
     clickable: true,
   },
-  mousewheel: true,
   keyboard: true,
 });
+
+// mainPageSlider.controller.control = modalSlider;
+// modalSlider.controller.control = mainPageSlider;
