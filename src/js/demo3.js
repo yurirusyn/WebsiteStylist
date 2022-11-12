@@ -104,11 +104,12 @@ class ShapeOverlays {
 
 (function () {
   const elmHamburger = document.querySelector('.hamburger');
-  const elmHamburger2 = document.querySelector('.hamburger2');
+  const elmHamburgerModal = document.querySelector('.hamburger-modal');
   const gNavItems = document.querySelectorAll('.global-menu__item');
   const overlayGlobalMenu = document.querySelector('.global-menu');
   const elmOverlay = document.querySelector('.shape-overlays');
   const icon = document.querySelector('.menu-btn');
+  const iconModal = document.querySelector('.menu-btn-modal');
   const overlay = new ShapeOverlays(elmOverlay);
   const closeMenu = document.querySelector('.global-menu__wrap');
   const modal = document.querySelector('.modal');
@@ -128,6 +129,28 @@ class ShapeOverlays {
     } else {
       elmHamburger.classList.remove('is-opened-navi');
       icon.classList.remove('menu-btn_active');
+      overlayGlobalMenu.classList.remove('overlay-global_menu');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
+
+  elmHamburgerModal.addEventListener('click', () => {
+    if (overlay.isAnimating) {
+      return false;
+    }
+    overlay.toggle();
+    if (overlay.isOpened === true) {
+      elmHamburgerModal.classList.add('is-opened-navi');
+      iconModal.classList.add('menu-btn_active');
+      overlayGlobalMenu.classList.add('overlay-global_menu');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      elmHamburgerModal.classList.remove('is-opened-navi');
+      iconModal.classList.remove('menu-btn_active');
       overlayGlobalMenu.classList.remove('overlay-global_menu');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.remove('is-opened');
