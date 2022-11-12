@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   color: #1c1c1c;
   color: var(--color-text);
+  height: auto;
   background-color: #fff;
   background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
@@ -1042,12 +1043,13 @@ a.demo--current {
 }
 
 // @media screen and (max-width: 55em) {
-html,
-body {
-  overflow-x: hidden;
-  width: 100vw;
-  height: 100%;
-}
+// html,
+// body {
+//   overflow-x: hidden;
+//   overflow-y: scroll;
+//   width: 100vw;
+//   height: 100%;
+// }
 .hamburger {
   // /* position: fixed; */
   top: 0.5em;

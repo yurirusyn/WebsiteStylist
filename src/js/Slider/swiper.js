@@ -47,3 +47,15 @@ let modalSlider = new Swiper('.modal-swiper', {
 
 // mainPageSlider.controller.control = modalSlider;
 // modalSlider.controller.control = mainPageSlider;
+
+let reviewsSlider = new Swiper('.reviewsSlider', {
+  navigation: {
+    nextEl: '.review--next',
+    prevEl: '.review--prev',
+  },
+  pagination: {
+    el: '.pag',
+    clickable: true,
+  },
+  keyboard: true,
+});
