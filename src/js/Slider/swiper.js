@@ -24,6 +24,7 @@ let mainPageSlider = new Swiper('.mySwiper', {
     1280: {
       slidesPerView: 2,
       slidesPerGroup: 2,
+      spaceBetween: 200,
       navigation: {
         nextEl: '.arrow-right',
         prevEl: '.arrow-left',
@@ -34,6 +35,7 @@ let mainPageSlider = new Swiper('.mySwiper', {
 });
 
 let modalSlider = new Swiper('.modal-swiper', {
+  cssMode: true,
   navigation: {
     nextEl: '.next',
     prevEl: '.prev',
@@ -49,13 +51,38 @@ let modalSlider = new Swiper('.modal-swiper', {
 // modalSlider.controller.control = mainPageSlider;
 
 let reviewsSlider = new Swiper('.reviewsSlider', {
+  cssMode: true,
   navigation: {
-    nextEl: '.review--next',
-    prevEl: '.review--prev',
+    nextEl: '.nav__buttons--prev',
+    prevEl: '.nav__buttons--next',
   },
   pagination: {
     el: '.pag',
     clickable: true,
+  },
+  breakpoints: {
+    0: {
+      navigation: {
+        nextEl: '.nav__buttons--prev',
+        prevEl: '.nav__buttons--next',
+      },
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      navigation: {
+        nextEl: '.arrow-right--reviews',
+        prevEl: '.arrow-left--reviews',
+      },
+    },
+    1280: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      navigation: {
+        nextEl: '.arrow-right--reviews',
+        prevEl: '.arrow-left--reviews',
+      },
+    },
   },
   keyboard: true,
 });
