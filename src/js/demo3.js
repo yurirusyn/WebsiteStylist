@@ -104,14 +104,12 @@ class ShapeOverlays {
 
 (function () {
   const elmHamburger = document.querySelector('.hamburger');
-  const elmHamburger2 = document.querySelector('.hamburger2');
   const gNavItems = document.querySelectorAll('.global-menu__item');
   const overlayGlobalMenu = document.querySelector('.global-menu');
   const elmOverlay = document.querySelector('.shape-overlays');
   const icon = document.querySelector('.menu-btn');
   const overlay = new ShapeOverlays(elmOverlay);
   const closeMenu = document.querySelector('.global-menu__wrap');
-  const modal = document.querySelector('.modal');
 
   elmHamburger.addEventListener('click', () => {
     if (overlay.isAnimating) {
@@ -141,9 +139,6 @@ class ShapeOverlays {
     }
 
     elmHamburger.classList.remove('is-opened-navi');
-    console.log('modal', modal);
-    modal.style.zIndex = '-1000';
-    console.log('modal.style.zIndex', modal.style.zIndex);
     icon.classList.remove('menu-btn_active');
 
     overlay.close();

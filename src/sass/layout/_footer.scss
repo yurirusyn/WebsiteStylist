@@ -1,109 +1,104 @@
 .footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
-} 
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .footer__nav-list {
-    display: grid;
-    grid-template-columns: 107px 107px;
-    grid-gap: 15%;
-    margin-bottom: 43px;
-    @media screen and (min-width: 1024px) {
-            display: flex;
-        grid-gap: 6%;
-        }
+  display: grid;
+  grid-template-columns: 107px 107px;
+  grid-gap: 15%;
+  margin-bottom: 43px;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    grid-gap: 6%;
+  }
 }
-    
+
 .footer__nav-link {
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 23px;
-        color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: #ffffff;
 
-        @media screen and (min-width: 768px) {
-            font-size: 12px;
-            }
-                        @media screen and (min-width: 1024px) {
-                            font-size: 13px;
-                            // margin-right: 2.14%;
-                        }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 13px;
+    // margin-right: 2.14%;
+  }
 }
-
 
 .footer__tel {
-    display: block;
-font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #FFFFFF;
-    opacity: 0.8;
-    margin-bottom: 19px;
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-bottom: 19px;
 
-    @media screen and (min-width: 768px) {
-            margin-bottom: 0px;
-                margin-bottom: 16px;
-            
-            }
-    
-        }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    margin-bottom: 16px;
+  }
+}
 
 .footer__mail {
-    display: block;
-    text-decoration: none;
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        color: #FFFFFF;
-        opacity: 0.8;
-        margin-bottom: 29px;
+  display: block;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-bottom: 29px;
 
-@media screen and (min-width: 768px) {
-        margin-bottom: 16px;
-
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
 }
 .footer__rights {
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 11px;
-        line-height: 20px;
-        color: #FFFFFF;
-        opacity: 0.8;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .footer__social {
-   margin-right: 25px;
+  margin-right: 25px;
 }
 
-.footer__rights:not(:last-child){
-    margin-bottom: 15px;
+.footer__rights:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .footer__icons {
-    margin-bottom: 29px;
+  margin-bottom: 29px;
 }
 
 .footer__tablet {
-    @media screen and (min-width: 768px) {
-            display: grid;
-                grid-template-columns: 234px 230px;
-                    grid-gap: 14%;
-    }
-           @media screen and (min-width: 1024px) {
-               grid-template-columns: 1fr 230px;
-               grid-gap: 7px;
-            
-           }
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 234px 230px;
+    grid-gap: 14%;
+  }
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 230px;
+    grid-gap: 7px;
+  }
 }
 .footer__desctop {
-    @media screen and (min-width: 1024px) {
-            display: grid;
-            justify-content: end;
-        }
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    justify-content: end;
+  }
 }

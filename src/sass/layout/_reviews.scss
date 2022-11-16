@@ -78,6 +78,9 @@
     fill: #8d8d8d;
 
     cursor: pointer;
+    &:hover {
+      fill: #ffffff;
+    }
   }
 }
 
@@ -93,6 +96,9 @@
     fill: #8d8d8d;
 
     cursor: pointer;
+    &:hover {
+      fill: #ffffff;
+    }
   }
 }
 
@@ -153,7 +159,7 @@
 }
 
 .reviews__text {
-  width: 280px;
+  width: 225px;
   height: 125px;
 
   font-weight: 400;
