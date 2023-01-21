@@ -12,6 +12,9 @@
 //   // opacity: 0;
 //   // pointer-events: none;
 // }
+// .hamburger-modal {
+//   z-index: 100;
+// }
 
 .modal {
   position: absolute;
@@ -19,7 +22,7 @@
   left: 0%;
   width: 100%;
   height: 100%;
-  z-index: -1000;
+  z-index: -10;
   padding: 13px 5px;
 
   background-color: #1c1c1c;
@@ -185,4 +188,8 @@
   color: #ffffff;
 
   list-style: decimal;
+}
+
+nav {
+  position: relative;
 }

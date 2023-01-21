@@ -8,7 +8,7 @@
     // transform: matrix(-0.66, -0.68, 0.85, -0.64, 0, 0);
 // background-blend-mode: lighten;
 //         background-size: contain;
-background:url(../images/header/Ellipse22-1.png);
+// background:url(../images/header/Ellipse22-1.png);
 
 // background-repeat: no-repeat;
     // background-origin: content-box;
@@ -38,7 +38,7 @@ background:url(../images/header/Ellipse22-1.png);
        
 
     @media screen and (min-width: 768px) {
-        background: url(../images/header/overlay_tablet.png);
+        // background: url(../images/header/overlay_tablet.png);
         width: 100%;
         background-repeat: no-repeat;
             // background-position: top;
@@ -50,7 +50,7 @@ background:url(../images/header/Ellipse22-1.png);
             background-repeat: no-repeat;
             // background-position: bottom;
             background-size: cover;
-        background: url(../images/header/overlay_desk.png);
+        // background: url(../images/header/overlay_desk.png);
         // background-image: url(../images/about-bg-desktop-1x.png);
 
         @media (min-device-pixel-ratio: 2),
@@ -289,19 +289,13 @@ position: relative;
 
 
 .hero__picture {
-    // max-width: 100%;
-    // display: flex;
-    // justify-content: center;
-    // width: 280px;
-    // min-width: 280px;
+  
     display: block;
     margin: 0 auto;
-    // margin-left: 0px;
-    // margin-right: 0px;
     width: 280px;
     @media screen and (min-width: 768px) {
             min-width: 600px;
-            // height: 836px;
+     
         }
                 @media screen and (min-width: 1024px) {
                     min-width: 346px;
@@ -544,5 +538,7 @@ font-family: 'Agreverance';
     background-color: black;
 }
 
-
+nav {
+    position: relative!important;
+}
 

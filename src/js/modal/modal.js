@@ -26,7 +26,7 @@ openButtonModal.forEach(button =>
   button.addEventListener('click', e => {
     e.preventDefault();
     const clickedButton = e.target;
-    modal.style.zIndex = '1000';
+    modal.style.zIndex = '10';
     let buttonIndex = clickedButton.getAttribute('id') - 1;
     modalSlider.slideTo(buttonIndex);
   })

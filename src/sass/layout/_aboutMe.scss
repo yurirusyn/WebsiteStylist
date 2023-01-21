@@ -7,7 +7,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     background-repeat: no-repeat;
-    background: url(../images/aboutMe/aboutMe-overlay-mob.png);
+    // background: url(../images/aboutMe/aboutMe-overlay-mob.png);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +23,7 @@
     }
 
     @media screen and (min-width: 768px) {
-    background: url(../images/aboutMe/aboutMe-overlay-tablet.png);
+    // background: url(../images/aboutMe/aboutMe-overlay-tablet.png);
         width: 100%;
         background-repeat: no-repeat;
         // background-position: top;
@@ -35,7 +35,7 @@
         background-repeat: no-repeat;
         // background-position: bottom;
         background-size: cover;
-    background: url(../images/aboutMe/aboutMe-overlay-desktop.png);
+    // background: url(../images/aboutMe/aboutMe-overlay-desktop.png);
         // background-image: url(../images/about-bg-desktop-1x.png);
 
         @media (min-device-pixel-ratio: 2),

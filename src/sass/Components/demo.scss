@@ -211,15 +211,16 @@ a:focus {
   display: none;
 }
 
-main {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  /* background-color: var(--color-main-bg); */
-}
+// body {
+//   position: relative;
+//   width: 100%;
+//   min-height: 100vh;
+//   // background-color: wheat;
+//   /* background-color: var(--color-main-bg); */
+// }
 
 .content {
-  position: relative;
+  // position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,8 +254,8 @@ main {
 
 /* Header */
 .codrops-header {
-  position: relative;
-  z-index: 100;
+  // position: relative;
+  // z-index: 100;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -287,7 +288,7 @@ main {
 }
 
 .demos {
-  position: relative;
+  // position: relative;
   display: block;
   align-self: end;
   text-align: center;
@@ -320,7 +321,7 @@ a.demo--current {
 
 /* Top Navigation Style */
 .codrops-links {
-  position: relative;
+  // position: relative;
   display: flex;
   justify-content: center;
   margin: 0 1em 0 0;
@@ -351,7 +352,7 @@ a.demo--current {
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 30000;
+  z-index: 30;
   text-align: center;
 }
 
@@ -676,7 +677,7 @@ a.demo--current {
 .shape-overlays {
   width: 100vw;
   height: 100vh;
-  z-index: 1200;
+  z-index: 20;
   pointer-events: none;
   position: fixed;
   top: 0;
@@ -749,10 +750,10 @@ a.demo--current {
   display: block;
   /* position: relative; */
   cursor: pointer;
-  /* position: absolute; */
+   position: absolute; 
   /* top: 2.25em;
 	right: 2.25em; */
-  z-index: 11000;
+  z-index: 100;
   /* border-radius: 50%;
 	background-color: var(--button-bg); */
   pointer-events: auto;
@@ -788,7 +789,7 @@ a.demo--current {
   height: 2px;
   overflow: hidden;
   position: absolute;
-  z-index: 10000;
+  // z-index: 10000;
 }
 
 .hamburger__line-in {
@@ -1060,11 +1061,12 @@ body {
   min-height: 0;
   /* padding-bottom: 10em; */
   flex-direction: column;
+  // position: absolute;
 }
 
 .content--fixed {
-  position: relative;
-  z-index: 0;
+  // position: relative;
+  // z-index: 0;
   display: block;
   padding: 0.85em;
 }
