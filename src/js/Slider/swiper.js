@@ -10,12 +10,24 @@ let mainPageSlider = new Swiper('.mySwiper', {
   },
   breakpoints: {
     0: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
     },
     768: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      navigation: {
+        nextEl: '.arrow-right',
+        prevEl: '.arrow-left',
+      },
+    },
+    1024: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
       navigation: {
         nextEl: '.arrow-right',
         prevEl: '.arrow-left',
