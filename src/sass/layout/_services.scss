@@ -16,6 +16,11 @@
     width: 768px;
     margin-left: 84px;
   }
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
   @media screen and (min-width: 1280px) {
     width: 1280px;
     margin-left: 162px;
@@ -39,14 +44,14 @@
 
 .service__titleBlock--tab {
   display: flex;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
 .service__titleBlock--desc {
   display: none;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }
