@@ -1,13 +1,4 @@
-.form {
- 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-  }
-}
-
 .form__title {
-  
   font-family: 'Agreverance';
   font-style: normal;
   font-weight: 400;
@@ -277,7 +268,6 @@
     // align-items: center;
     max-width: 1080px;
   }
-  
 }
 
 .form__picture {
