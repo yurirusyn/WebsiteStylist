@@ -6,7 +6,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  *
  * Copyright 2017, Codrops
- * http://www.codrops.com
+ * http://www.codrops.comsdsd
  */
 {
   setTimeout(() => document.body.classList.add('render'), 60);
