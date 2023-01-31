@@ -10,9 +10,15 @@
 //   }
 // }
 
-.instagram-section {
-margin-right: 50px;
-margin-left: 50px;
+.container-instagram {
+  margin-left: 48px;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    margin-left: 84px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 162px;
+  }
 }
 
 .instagram_lightwidget-tab {
