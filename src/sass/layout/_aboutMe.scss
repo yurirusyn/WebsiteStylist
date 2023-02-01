@@ -1,16 +1,3 @@
-.container {
-  padding-right: 47px;
-  padding-left: 48px;
-  @media screen and (min-width: 768px) {
-    padding-right: 84px;
-    padding-left: 84px;
-  }
-  @media screen and (min-width: 1240px) {
-    padding-right: 162px;
-    padding-left: 162px;
-  }
-}
-
 .aboutMe {
   display: flex;
   justify-content: center;
