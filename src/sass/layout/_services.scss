@@ -7,13 +7,15 @@
 
   background-color: #1c1c1c;
 
-  margin-left: auto;
-  margin-right: auto;
   // padding: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-right: 47px;
+  padding-left: 48px;
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding-right: 84px;
+    padding-left: 84px;
   }
   @media screen and (min-width: 1024px) {
     width: 1024px;
@@ -22,6 +24,8 @@
   }
   @media screen and (min-width: 1280px) {
     width: 1280px;
+    padding-right: 162px;
+    padding-left: 162px;
     padding-top: 70px;
     padding-bottom: 70px;
   }
@@ -31,8 +35,12 @@
   display: block;
   width: 280px;
   @media screen and (min-width: 768px) {
-    width: 500px;
+    width: 760px;
   }
+}
+.service__block_rev {
+  display: block;
+  width: 280px;
 }
 
 .service__tab--flex {
