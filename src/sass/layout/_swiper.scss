@@ -58,21 +58,30 @@
     display: none;
   }
 }
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  color: #ffffff;
-  font-size: 20px;
-  margin-right: 20px;
-  margin-top: -80px;
+.swiper-button-next {
+  color: transparent;
+  margin-right: -30px !important;
+  margin-top: -51px !important;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
+.swiper-button-prev {
+  color: transparent;
+  margin-top: -51px !important;
+  margin-left: -20px !important;
+}
+
+.arrows {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.swiper-button-prev::after,
 .swiper-button-next::after {
-  margin-left: 18px;
-  // margin-top: -105px;
+  color: transparent;
+  font-size: 20px;
   @media screen and (min-width: 768px) {
     display: none;
   }

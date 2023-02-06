@@ -12,7 +12,7 @@ mainPageSlider.on('slideChange', function () {
     arrow.style.marginTop = '-47px';
     arrow.style.marginLeft = '-10px';
     arrow.style.fontSize = '20px';
-    arrow.style.color = '#ffffff';
+    arrow.style.color = 'transparent';
   }
 });
 
@@ -26,7 +26,7 @@ mainPageSlider.on('slideChange', function () {
     arrowNext.style.display = 'block';
     arrowNext.style.marginTop = '-48px';
     arrowNext.style.fontSize = '20px';
-    arrowNext.style.color = '#ffffff';
+    arrowNext.style.color = 'transparent';
   }
 });
 
