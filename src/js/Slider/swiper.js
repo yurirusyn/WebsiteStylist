@@ -72,6 +72,8 @@ let reviewsSlider = new Swiper('.reviewsSlider', {
   },
   breakpoints: {
     0: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
       navigation: {
         nextEl: '.nav__buttons--prev',
         prevEl: '.nav__buttons--next',
