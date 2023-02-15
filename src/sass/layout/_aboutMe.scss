@@ -1,13 +1,72 @@
 .aboutMe {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 150px;
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
+}
+.ellips3 {
+  z-index: -1;
+  position: absolute;
+  top: -242px;
+  left: -124px;
+  @media screen and (max-width: 768px) {
+    top: -310px;
+    left: -120px;
+  }
+}
+.ellipsCircleAbout {
+  width: 298px;
+  display: block;
+  position: absolute;
+  top: 37px;
+  left: 3px;
+  transform: rotate(100deg);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    display: block;
+    transform: rotate(100deg);
+    left: 0;
+    top: -77px;
+    width: 488px;
+  }
+  @media screen and (min-width: 1024px) {
+    display: block;
+    position: absolute;
+    left: -200px;
+    top: 105px;
+    transform: none;
+  }
+}
+.ellipsCircleAbout2 {
+  width: 298px;
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 1px;
+  transform: rotate(96deg);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    transform: rotate(96deg);
+    width: 490px;
+    top: -10px;
+    display: block;
+    left: 42px;
+  }
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .aboutMe__overlay {
   padding-top: 50px;
   padding-bottom: 50px;
   background-repeat: no-repeat;
-  background: url(../images/aboutMe/aboutMe-overlay-mob.png);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +80,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    background: url(../images/aboutMe/aboutMe-overlay-tablet.png);
+    // background: url(../images/aboutMe/aboutMe-overlay-tablet.png);
     width: 100%;
     background-repeat: no-repeat;
     // background-position: top;
@@ -33,7 +92,7 @@
     background-repeat: no-repeat;
     // background-position: bottom;
     background-size: cover;
-    background: url(../images/aboutMe/aboutMe-overlay-desktop.png);
+    // background: url(../images/aboutMe/aboutMe-overlay-desktop.png);
     // background-image: url(../images/about-bg-desktop-1x.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -62,6 +121,9 @@
   @media screen and (min-width: 768px) {
     font-size: 40px;
     line-height: 40px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 70px;
   }
 }
 .aboutMe__flex {

@@ -1,3 +1,108 @@
+.service-rev {
+  position: relative;
+  z-index: 4;
+  padding-top: 120px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 150px;
+  }
+}
+.ellips5 {
+  position: absolute;
+  top: -420px;
+  right: -85px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -280px;
+    left: -150px;
+    z-index: -1;
+  }
+}
+.ellipsCircleRev {
+  height: 325px;
+  position: absolute;
+  top: -550px;
+  left: -255px;
+  transform: rotate(130deg);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    transform: rotate(94deg);
+    top: -643px;
+    width: 679px;
+    height: 546px;
+    left: -254px;
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: -45px;
+    left: -278px;
+    transform: rotate(130deg);
+  }
+}
+.ellipsCircleRev2 {
+  height: 325px;
+  position: absolute;
+  top: -530px;
+  left: -221px;
+  transform: rotate(130deg);
+
+  @media screen and (min-width: 768px) {
+    width: 679px;
+    height: 494px;
+    position: absolute;
+    top: -641px;
+    left: -187px;
+    transform: rotate(100deg);
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: -32px;
+    left: -150px;
+    transform: rotate(130deg);
+  }
+}
+
+.ellipsCircleOff {
+  height: 325px;
+  position: absolute;
+  top: -543px;
+  right: -277px;
+  transform: rotate(130deg);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -641px;
+    right: -550px;
+    transform: rotate(110deg);
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: 14px;
+    right: -357px;
+    transform: rotate(130deg);
+  }
+}
+.ellipsCircleOff2 {
+  height: 325px;
+  position: absolute;
+  top: -550px;
+  right: -221px;
+  transform: rotate(130deg);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -641px;
+    right: -665px;
+    transform: rotate(110deg);
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    transform: rotate(130deg);
+    right: -425px;
+    top: 35px;
+  }
+}
 .nav__buttons--next {
   display: flex;
   justify-content: space-between;
@@ -48,11 +153,10 @@
 }
 
 .reviews__titleBlock {
-  margin-left: 20px;
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
 }
 

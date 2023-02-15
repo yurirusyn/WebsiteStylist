@@ -1,13 +1,75 @@
 .advantages__section {
   padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+
   @media screen and (min-width: 768px) {
     padding-bottom: 20px;
     display: flex;
-    margin-top: 40px;
+    margin-top: 170px;
     // margin: 0 auto;
   }
 }
+.ellips4 {
+  z-index: -1;
+  position: absolute;
+  top: -280px;
+  right: -140px;
+  @media screen and (min-width: 768px) {
+    // top: -350px;
+    top: -422px;
+    right: -220px;
+  }
+  @media screen and (min-width: 1024px) {
+    top: 100px;
+    right: -220px;
+  }
+}
+.ellipsCircle1 {
+  width: 315px;
+  height: 400px;
+  position: absolute;
+  top: -160px;
+  right: -207px;
+  transform: rotate(52deg);
+  @media screen and (min-width: 768px) {
+    width: 303px;
+    position: absolute;
+    top: -144px;
+    right: -124px;
+    transform: rotate(13deg);
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    width: 700px;
+    top: 483px;
+    right: -119px;
+    transform: rotate(180deg);
+  }
+}
+.ellipsCircle2 {
+  width: 194px;
+  height: 376px;
+  position: absolute;
+  top: -155px;
+  right: -140px;
+  transform: rotate(28deg);
 
+  @media screen and (min-width: 768px) {
+    width: 350px;
+    position: absolute;
+    top: -75px;
+    right: -158px;
+    transform: rotate(19deg);
+  }
+  @media screen and (min-width: 1024px) {
+    width: 700px;
+    position: absolute;
+    top: 552px;
+    right: -130px;
+    transform: rotate(180deg);
+  }
+}
 .advantages__title {
   display: block;
   width: 206px;
