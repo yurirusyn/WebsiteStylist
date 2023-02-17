@@ -1,6 +1,11 @@
 .footer {
-  padding-top: 50px;
   padding-bottom: 50px;
+  padding-top: 100px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 170px;
+  }
+
 }
 .footer__nav-list {
   display: grid;
@@ -97,7 +102,90 @@
     grid-gap: 7px;
   }
 }
+
+.ellipsCircleSmallFooter {
+  width: 380px;
+  height: 450px;
+  position: absolute;
+  left: -100px;
+  top: -277px;
+  transform: rotate(145deg);
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    transform: rotate(92deg);
+    height: 600px;
+    top: -280px;
+    right: -105px;
+    left: unset;
+
+    width: 380px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 250px;
+    height: 340px;
+    display: block;
+    right: 20px;
+    left: unset;
+
+    position: absolute;
+    top: -137px;
+    /* right: 0; */
+    transform: rotate(95deg);
+  }
+}
+
+.ellipsCircleSmallFooter2 {
+  height: 450px;
+  position: absolute;
+  left: -100px;
+  top: -230px;
+  transform: rotate(145deg);
+  @media screen and (min-width: 768px) {
+    height: 600px;
+    width: 380px;
+    position: absolute;
+    top: -277px;
+    right: -162px;
+    transform: rotate(92deg);
+    left: unset;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 250px;
+    height: 340px;
+    display: block;
+    position: absolute;
+    top: -125px;
+    left: unset;
+    right: -14px;
+    transform: rotate(95deg);
+  }
+}
+.ellipsFooter {
+  position: absolute;
+  top: -130px;
+  left: -405px;
+  height: 400px;
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+.ellipsFooter2 {
+  position: absolute;
+  top: -200px;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -200px;
+    left: 130px;
+    height: 400px;
+  }
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
 .footer__desctop {
+  position: relative;
+
   @media screen and (min-width: 1024px) {
     display: grid;
     justify-content: end;
