@@ -59,19 +59,21 @@
 .swiper-button-next {
   height: 20px;
   color: transparent;
-  margin-right: -30px !important;
-  margin-top: -41px !important;
+  margin-right: -10px !important;
+  margin-top: -50px !important;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-
+// .swiper-slide .swiper-slide-active {
+//   width: 445px;
+// }
 .swiper-button-prev {
   height: 20px;
   color: transparent;
-  margin-top: -41px !important;
-  margin-left: -20px !important;
+  margin-top: -50px !important;
+  margin-left: -40px !important;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 

@@ -1,10 +1,10 @@
 .service-rev {
   position: relative;
   z-index: 4;
-  padding-top: 120px;
+  padding-top: 60px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 150px;
+    padding-top: 60px;
   }
 }
 .ellips5 {
@@ -170,6 +170,7 @@
 }
 
 .arrow-left--reviews {
+  -webkit-tap-highlight-color: #0000;
   @media screen and (min-width: 0px) {
     display: none;
   }
@@ -189,6 +190,7 @@
 }
 
 .arrow-right--reviews {
+  -webkit-tap-highlight-color: #0000;
   @media screen and (min-width: 0px) {
     display: none;
   }
