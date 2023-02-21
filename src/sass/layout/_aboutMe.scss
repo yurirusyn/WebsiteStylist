@@ -9,7 +9,7 @@
   }
 }
 .ellips3 {
-  z-index: -1;
+  z-index: -143243;
   position: absolute;
   top: -242px;
   left: -124px;
@@ -130,7 +130,6 @@
   display: flex;
   margin-bottom: 32px;
   @media screen and (min-width: 768px) {
-    justify-content: space-between;
   }
 }
 
@@ -194,9 +193,14 @@
   }
 }
 .aboutMe__text-container {
+  padding-right: 33px;
+  @media screen and (min-width: 768px) {
+    padding-right: 70px;
+  }
   @media screen and (min-width: 1024px) {
     width: 440px;
     margin-right: 40px;
+    padding-right: 0px;
   }
 
   @media screen and (min-width: 1440px) {

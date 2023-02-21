@@ -1,11 +1,6 @@
 .form {
   position: relative;
   z-index: 1;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-  }
 }
 .ellips7 {
   position: absolute;
@@ -191,7 +186,6 @@
 .form__messenger {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -239,12 +233,13 @@
   @media screen and (min-width: 375px) {
     display: block;
     width: 280px;
-    margin: 0 auto;
+    margin-left: 0;
     margin-bottom: 35px;
   }
 
   @media screen and (min-width: 768px) {
     width: 414px;
+    margin: 0 auto 35px auto;
   }
 
   @media screen and (min-width: 1024px) {
@@ -264,6 +259,9 @@
   line-height: 20px;
   color: #ffffff;
   opacity: 0.3;
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
 }
 
 .form__radio-telegram {
