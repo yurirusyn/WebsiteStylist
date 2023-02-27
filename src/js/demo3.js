@@ -135,7 +135,6 @@ class ShapeOverlays {
       }
     }
   });
-
   elmHamburgerModal.addEventListener('click', () => {
     if (overlay.isAnimating) {
       return false;
@@ -157,7 +156,6 @@ class ShapeOverlays {
       }
     }
   });
-
   closeMenu.addEventListener('click', () => {
     if (overlay.isAnimating) {
       return false;
