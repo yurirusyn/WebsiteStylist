@@ -26,60 +26,65 @@
 }
 .modal-head {
   display: flex;
-  align-content: space-between;
-  justify-content: space-between;
+
+  justify-content: center;
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-between;
+  }
 }
 
-.menu-btn {
-  display: block;
-}
+// .menu-btn {
+//   display: block;
+// }
 
-.menu-btn span,
-.menu-btn span::before,
-.menu-btn span::after {
-  position: absolute;
-  top: 50%;
-  margin-top: -2px;
-  left: 50%;
-  margin-left: -20px;
-  width: 40px;
-  height: 0.5px;
-  background-color: #ffffff;
-}
+// .menu-btn span,
+// .menu-btn span::before,
+// .menu-btn span::after {
+//   position: absolute;
+//   top: 50%;
+//   margin-top: -2px;
+//   left: 50%;
+//   margin-left: -20px;
+//   width: 40px;
+//   height: 0.5px;
+//   background-color: #ffffff;
+// }
 
-.menu-btn span::before,
-.menu-btn span::after {
-  content: '';
-  display: block;
-  transition: 0.2s;
-}
+// .menu-btn span::before,
+// .menu-btn span::after {
+//   content: '';
+//   display: block;
+//   transition: 0.2s;
+// }
 
-.menu-btn span::before {
-  transform: translateY(-6px);
-}
+// .menu-btn span::before {
+//   transform: translateY(-6px);
+// }
 
-.menu-btn span::after {
-  transform: translateY(10px);
-}
+// .menu-btn span::after {
+//   transform: translateY(10px);
+// }
 
-.menu-btn_active span:before {
-  transform: rotate(45deg);
-}
+// .menu-btn_active span:before {
+//   transform: rotate(45deg);
+// }
 
-.menu-btn_active span:after {
-  transform: rotate(-45deg);
-}
-.menu-btn_active span {
-  height: 0;
-}
-.menu-btn_active span {
-  background-color: black;
-}
+// .menu-btn_active span:after {
+//   transform: rotate(-45deg);
+// }
+// .menu-btn_active span {
+//   height: 0;
+// }
+// .menu-btn_active span {
+//   background-color: #ffff;
+// }
 
-.menu-btn_active span::before,
-.menu-btn_active span::after {
-  background-color: black;
-}
+// .menu-btn_active span::before,
+// .menu-btn_active span::after {
+//   background-color: #ffff;
+// }
 
 .arrow {
   background-color: transparent;
@@ -88,9 +93,22 @@
   width: 10px;
   height: 25px;
   cursor: pointer;
+  // display: none;
+  // @media screen and (max-width: 1023px) {
+  //   display: inline;
+  // }
 }
 .arrow-left-svg {
   fill: rgb(255, 255, 255);
+}
+
+.arrow-back {
+  display: none;
+  @media screen and (max-width: 1024px) {
+    -webkit-tap-highlight-color: #0000;
+
+    display: block;
+  }
 }
 
 .slider-content {

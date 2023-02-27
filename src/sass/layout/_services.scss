@@ -33,13 +33,19 @@
 .service__block {
   display: block;
   width: 280px;
+  margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     width: 760px;
+    margin-bottom: 60px;
   }
+}
+.discription_block {
+  height: 231px;
 }
 .service__block_rev {
   display: block;
   width: 280px;
+  padding-left: 3px;
 }
 
 .service__tab--flex {
@@ -105,22 +111,22 @@
   }
 }
 
-.arrow-right {
-  -webkit-tap-highlight-color: #0000;
+// .arrow-right {
+//   -webkit-tap-highlight-color: #0000;
 
-  @media screen and (min-width: 0px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: inline;
+//   @media screen and (min-width: 0px) {
+//     display: none;
+//   }
+//   @media screen and (min-width: 768px) {
+//     display: inline;
 
-    transform: rotate(-90deg);
+//     transform: rotate(-90deg);
 
-    fill: #8d8d8d;
+//     fill: #8d8d8d;
 
-    cursor: pointer;
-  }
-}
+//     cursor: pointer;
+//   }
+// }
 
 .service__tab--wrapper {
   margin-right: auto;
@@ -221,11 +227,13 @@
     display: none;
   }
 }
-
+.swiper-button-disabled {
+  display: none !important;
+}
 .service__text {
   width: 280px;
-
-  margin-bottom: 30px;
+  height: 120px;
+  margin-bottom: 10px;
 
   font-weight: 400;
   font-size: 13px;
@@ -256,8 +264,8 @@
 .service__button {
   width: 280px;
   height: 40px;
-
-  margin-bottom: 40px;
+  -webkit-tap-highlight-color: #0000;
+  // margin-bottom: 40px;
 
   color: #c4c4c4;
   background-color: transparent;
@@ -274,7 +282,7 @@
     font-size: 14px;
     line-height: 24px;
 
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
 
     color: #ffffff;
 
