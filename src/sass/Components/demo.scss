@@ -359,6 +359,7 @@ a.demo--current {
 } */
 
 .global-menu__item {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   color: #1c1c1c;
   /* font-family: var(--font-family-menu); */
   font-family: 'Agreverance';
