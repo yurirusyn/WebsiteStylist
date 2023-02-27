@@ -98,3 +98,49 @@ let reviewsSlider = new Swiper('.reviewsSlider', {
   },
   keyboard: true,
 });
+// let mainPageSliderModal = new Swiper('.modal-swiper', {
+//   cssMode: true,
+//   navigation: {
+//     nextEl: '.modal-arrow-next',
+//     prevEl: '.modal-arrow-prev',
+//   },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//       slidesPerGroup: 1,
+//       navigation: {
+//         nextEl: '.modal-arrow-next',
+//         prevEl: '.modal-arrow-prev',
+//       },
+//     },
+//     768: {
+//       slidesPerView: 1,
+//       slidesPerGroup: 1,
+//       navigation: {
+//         nextEl: '.modal-arrow-next',
+//         prevEl: '.modal-arrow-prev',
+//       },
+//     },
+//     1024: {
+//       slidesPerView: 1,
+//       slidesPerGroup: 1,
+//       navigation: {
+//         nextEl: '.modal-arrow-next',
+//         prevEl: '.modal-arrow-prev',
+//       },
+//     },
+//     1280: {
+//       slidesPerView: 1,
+//       slidesPerGroup: 1,
+//       navigation: {
+//         nextEl: '.modal-arrow-next',
+//         prevEl: '.modal-arrow-prev',
+//       },
+//     },
+//   },
+//   keyboard: true,
+// });

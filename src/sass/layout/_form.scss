@@ -121,7 +121,6 @@
 
 .form__radio {
   display: flex;
-  margin-left: -6%;
   // justify-content: start;
   // @media screen and (min-width: 768px) {
   //       justify-content: center;
@@ -373,13 +372,16 @@ $color2: #c4c4c4;
 .radio {
   // margin: 0.5rem;
   display: flex;
+  margin-right: 35px;
   // justify-content: center;
   // align-items: center;
 
   input[type='radio'] {
-    // position: absolute;
     opacity: 0;
-    // vertical-align: middle;
+    z-index: 999;
+    height: 25px;
+    position: absolute;
+    width: 20px;
 
     + .radio-label {
       font-family: 'Montserrat';
@@ -466,4 +468,147 @@ $color2: #c4c4c4;
 
 .form__input-messager {
   visibility: hidden;
+}
+
+.thx-text-container {
+  width: 258px;
+}
+.header-thx {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 60px;
+  color: #1c1c1c;
+}
+.thx-text {
+  margin-top: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #1c1c1c;
+}
+.thx-number {
+  font-weight: 700;
+  color: #1c1c1c;
+}
+.thx-btn {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  width: 258px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  opacity: 0.9;
+  border: 0.5px solid #1c1c1c;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+.cross-img {
+  color: #1c1c1c;
+  position: absolute;
+  right: 21px;
+  top: 21px;
+}
+.cross-img:hover {
+  cursor: pointer;
+}
+.modal-form {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.open_pop_up {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.9;
+  background-color: black;
+  border: 0.5px solid #c4c4c4;
+  margin-bottom: 10px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+.pop_up {
+  position: absolute;
+  z-index: 99;
+  // bottom: 100px;
+  // right: 100px;
+  width: 340px;
+  height: 330px;
+  display: flex;
+  background: #e8e8e8;
+  justify-content: center;
+  transform: translateY(-44.5%) scale(0);
+  transition: 0.4s ease-in-out;
+}
+.pop_up.activePopUp {
+  transform: translateY(0%) scale(100%);
+}
+.wrap {
+  width: 100%;
+  z-index: 99999;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  top: 300px;
+  left: 0;
+  @media screen and (min-width: 768px) {
+    top: 400px;
+  }
+  @media screen and (min-width: 1024px) {
+    top: 500px;
+  }
 }

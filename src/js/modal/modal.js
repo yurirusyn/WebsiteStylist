@@ -14,6 +14,15 @@
 const openButtonModal = document.querySelectorAll('.service__button');
 const modal = document.querySelector('.modal');
 const modalArrow = document.querySelector('.arrow');
+// const modalNavigation = document.querySelector('modalNav');
+// console.log('modalNavigation:', modalNavigation);
+
+// modalNavigation.addEventListener('click', e => {
+//   e.preventDefault();
+//   modal.style.zIndex = '-1000';
+//   const currentModalSlide = modalSlider.realIndex;
+//   mainPageSlider.slideTo(currentModalSlide);
+// });
 
 modalArrow.addEventListener('click', e => {
   e.preventDefault();

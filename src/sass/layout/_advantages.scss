@@ -150,11 +150,10 @@
   margin-bottom: 10px;
 }
 li {
-  list-style-position: outside;
+  vertical-align: middle;
 }
 li::marker {
   font-size: 5px;
-  margin-bottom: 10px;
 }
 .advantages__list {
   margin-left: 20px;

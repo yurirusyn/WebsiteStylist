@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./sass/index.scss" />
 
     <script type="module" src="./index.js"></script>
+    <!-- <script src="./js/openPopUp.js"></script> -->
     <script>
       document.documentElement.className = 'js';
     </script>
@@ -32,8 +33,40 @@
       style="display: none"
       onload="
             if (submitted) {
-              window.location ='feedback.html'}"
+              const popUp = document.getElementById('pop_up')
+              // const phonNum = document.getElementById('phone_number');
+              popUp.classList.add('activePopUp')
+              }"
     ></iframe>
+    <div class="wrap">
+      <div class="pop_up" id="pop_up">
+        <img
+          style="position: absolute; right: 0; top: -11px"
+          src="./images/popCircle.png"
+        />
+        <img
+          style="position: absolute; right: -34px; top: 3px"
+          src="./images/popCircle.png"
+        />
+        <div>
+          <img id="close_pop_up" class="cross-img" src="./images/закрыть.svg" />
+        </div>
+        <div class="thx-text-container">
+          <p class="header-thx">Дякую!</p>
+          <p class="thx-text">
+            Мені приємно, що Ви цікавитесь моїми послугами.
+          </p>
+          <p class="thx-text">
+            Найближчим часом я зв‘яжусь з Вами в обраному месенджері за номером
+          </p>
+          <p class="thx-number"></p>
+
+          <button class="thx-btn" id="perHead">
+            <a href="#headerScroll">на головну</a>
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/header.html"></include>
 
@@ -45,6 +78,7 @@
     <include src="./partials/instagram.html"></include>
 
     <include src="./partials/form.html"></include>
+    <!-- <include src="./partials/popUp.html"></include> -->
     <include src="./partials/footer.html"></include>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -57,6 +91,7 @@
     <script src="./js/demo.js"></script>
     <script src="./js/easings.js"></script>
     <script src="./js/demo3.js"></script>
+    <!-- <script src="./js/openPopUp.js"></script> -->
     <script type="module" src="./js/form/cleave.js"></script>
     <script src="./js/form/moveCursorToEnd.js"></script>
     <script src="./js/form/checkbox.js"></script>
