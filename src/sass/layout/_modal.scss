@@ -104,7 +104,7 @@
 
 .arrow-back {
   display: none;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1023px) {
     -webkit-tap-highlight-color: #0000;
 
     display: block;
@@ -179,7 +179,7 @@
     left: 70px;
   }
   @media screen and (min-width: 1024px) {
-    left: -80px;
+    left: -100px;
     width: 1050px;
     top: -120px;
   }
