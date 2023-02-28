@@ -142,14 +142,14 @@ class ShapeOverlays {
     overlay.toggle();
     if (overlay.isOpened === true) {
       elmHamburgerModal.classList.add('is-opened-navi');
-      iconModal.classList.add('menu-btn_active');
+      icon.classList.add('menu-btn_active');
       overlayGlobalMenu.classList.add('overlay-global_menu');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.add('is-opened');
       }
     } else {
       elmHamburgerModal.classList.remove('is-opened-navi');
-      iconModal.classList.remove('menu-btn_active');
+      icon.classList.remove('menu-btn_active');
       overlayGlobalMenu.classList.remove('overlay-global_menu');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.remove('is-opened');
@@ -162,6 +162,7 @@ class ShapeOverlays {
     }
 
     elmHamburger.classList.remove('is-opened-navi');
+    elmHamburgerModal.classList.remove('is-opened-navi');
     console.log('modal', modal);
     modal.style.zIndex = '-1000';
     console.log('modal.style.zIndex', modal.style.zIndex);
