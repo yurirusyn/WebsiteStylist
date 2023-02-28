@@ -26,65 +26,23 @@
 }
 .modal-head {
   display: flex;
-
+  padding-right: 47px;
+  padding-left: 48px;
   justify-content: center;
+  align-items: center;
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding-right: 84px;
+    padding-left: 84px;
+  }
   @media screen and (max-width: 1023px) {
     display: flex;
-    justify-content: space-around;
-    align-items: space-between;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1240px) {
+    padding-right: 162px;
+    padding-left: 162px;
   }
 }
-
-// .menu-btn {
-//   display: block;
-// }
-
-// .menu-btn span,
-// .menu-btn span::before,
-// .menu-btn span::after {
-//   position: absolute;
-//   top: 50%;
-//   margin-top: -2px;
-//   left: 50%;
-//   margin-left: -20px;
-//   width: 40px;
-//   height: 0.5px;
-//   background-color: #ffffff;
-// }
-
-// .menu-btn span::before,
-// .menu-btn span::after {
-//   content: '';
-//   display: block;
-//   transition: 0.2s;
-// }
-
-// .menu-btn span::before {
-//   transform: translateY(-6px);
-// }
-
-// .menu-btn span::after {
-//   transform: translateY(10px);
-// }
-
-// .menu-btn_active span:before {
-//   transform: rotate(45deg);
-// }
-
-// .menu-btn_active span:after {
-//   transform: rotate(-45deg);
-// }
-// .menu-btn_active span {
-//   height: 0;
-// }
-// .menu-btn_active span {
-//   background-color: #ffff;
-// }
-
-// .menu-btn_active span::before,
-// .menu-btn_active span::after {
-//   background-color: #ffff;
-// }
 
 .arrow {
   background-color: transparent;
@@ -163,6 +121,7 @@
 
 .shadow-title {
   position: absolute;
+  left: -37px;
   top: -60px;
   width: 310px;
   display: flex;
@@ -176,14 +135,15 @@
     // left: 18px;
 
     width: 448px;
-    left: 70px;
+    left: 32px;
   }
   @media screen and (min-width: 1024px) {
-    left: -100px;
+    left: -113px;
     width: 1050px;
     top: -120px;
   }
 }
+
 .number {
   margin-right: 10px;
 }
@@ -210,9 +170,12 @@
     font-size: 85px;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 120px;
+    font-size: 112px;
   }
 }
+// .hamburger-modal {
+//   z-index: 99991;
+// }
 
 .slide-underTitle {
   // width: 250px;
