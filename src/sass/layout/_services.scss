@@ -228,7 +228,7 @@
   }
 }
 .swiper-button-disabled {
-  display: none !important;
+  opacity: 0;
 }
 .service__text {
   width: 280px;
@@ -260,7 +260,11 @@
     width: 360px;
   }
 }
-
+.other {
+  @media screen and (max-width: 767px) {
+    margin-bottom: -10px;
+  }
+}
 .service__button {
   width: 280px;
   height: 40px;
