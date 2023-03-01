@@ -582,7 +582,7 @@ $color2: #c4c4c4;
   outline: none;
 }
 .pop_up {
-  position: absolute;
+  // position: absolute;
   z-index: 99;
   // bottom: 100px;
   // right: 100px;
@@ -591,11 +591,16 @@ $color2: #c4c4c4;
   display: flex;
   background: #e8e8e8;
   justify-content: center;
-  transform: translateY(-44.5%) scale(0);
   transition: 0.4s ease-in-out;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
 }
 .pop_up.activePopUp {
-  transform: translateY(0%) scale(100%);
+  transform: translate(-50%, -50%) scale(100%);
 }
 .wrap {
   width: 100%;
@@ -603,12 +608,6 @@ $color2: #c4c4c4;
   justify-content: center;
   display: flex;
   position: fixed;
-  top: 300px;
   left: 0;
-  @media screen and (min-width: 768px) {
-    top: 400px;
-  }
-  @media screen and (min-width: 1024px) {
-    top: 500px;
-  }
+  top: 40%;
 }
