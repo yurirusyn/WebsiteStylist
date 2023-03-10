@@ -1,190 +1,250 @@
 .advantages__section {
-    padding-bottom: 70px;
-    @media screen and (min-width: 768px) {
-            padding-bottom: 20px;
-            // display: flex;
-            // justify-content: center;
-            margin: 0 auto;
-        }
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 20px;
+    display: flex;
+    margin-top: 120px;
+    // margin: 0 auto;
+  }
 }
+.ellips4 {
+  z-index: -1;
+  position: absolute;
+  top: -280px;
+  right: -140px;
+  @media screen and (min-width: 768px) {
+    // top: -350px;
+    top: -422px;
+    right: -220px;
+  }
+  @media screen and (min-width: 1024px) {
+    top: 100px;
+    right: -220px;
+  }
+}
+.ellipsCircle1 {
+  width: 315px;
+  height: 400px;
+  position: absolute;
+  top: -160px;
+  right: -207px;
+  transform: rotate(52deg);
+  @media screen and (min-width: 768px) {
+    width: 303px;
+    position: absolute;
+    top: -144px;
+    right: -124px;
+    transform: rotate(13deg);
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    width: 700px;
+    top: 483px;
+    right: -119px;
+    transform: rotate(180deg);
+  }
+}
+.ellipsCircle2 {
+  width: 194px;
+  height: 376px;
+  position: absolute;
+  top: -155px;
+  right: -140px;
+  transform: rotate(28deg);
 
-
-
+  @media screen and (min-width: 768px) {
+    width: 350px;
+    position: absolute;
+    top: -75px;
+    right: -158px;
+    transform: rotate(19deg);
+  }
+  @media screen and (min-width: 1024px) {
+    width: 700px;
+    position: absolute;
+    top: 552px;
+    right: -130px;
+    transform: rotate(180deg);
+  }
+}
 .advantages__title {
-    display: block;
-    width: 206px;
-    font-family: 'Agreverance';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 30px;
-        /* or 100% */
-    
-    
-        /* text */
-    
-        color: #FFFFFF;
+  display: block;
+  width: 206px;
+  font-family: 'Agreverance';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  /* or 100% */
 
-        @media screen and (min-width: 768px) {
-            
-            width: 491px;
-            // justify-content: start;
-                font-size: 40px;
-                line-height: 40px;
-                margin-bottom: 30px
-            }
-                         @media screen and (min-width: 1024px) {
-                                margin-bottom: 63px
-                            //  width: 491px;
-                            //  // justify-content: start;
-                            //  font-size: 40px;
-                            //  line-height: 40px;
-                         }
-                         
+  /* text */
+
+  color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    width: 491px;
+    // justify-content: start;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 63px;
+    //  width: 491px;
+    //  // justify-content: start;
+    //  font-size: 40px;
+    //  line-height: 40px;
+  }
 }
-
-
 
 .advantages__item {
-    // width: 270px;
-    margin: 0 auto;
-    list-style-type: disc;
-    // display: inline-block;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
+  // width: 270px;
+  margin: 0 auto;
+  list-style-type: disc;
+  // display: inline-block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  /* or 177% */
+
+  /* text */
+
+  color: #ffffff;
+
+  opacity: 0.8;
+  text-align: start;
+
+  @media screen and (min-width: 768px) {
+    // width: 509px;
+
     font-size: 13px;
-    line-height: 23px;
-    /* or 177% */
+  }
 
-
-    /* text */
-
-    color: #FFFFFF;
-
-    opacity: 0.8;
-    text-align: start;
-   
-        @media screen and (min-width: 768px) {
-                width: 509px;
-  
-                font-size: 13px;
-            }
-
-    @media screen and (min-width: 1024px) {
-        font-size: 11px;
-        line-height: 22px;
-        // justify-self: center;
+  @media screen and (min-width: 1024px) {
+    font-size: 11px;
+    line-height: 22px;
+    // justify-self: center;
     width: 71.14%;
-        height: 100%;
-        font-size: 11px;
-        line-height: 22px;
-    }
+    height: 100%;
+    font-size: 11px;
+    line-height: 22px;
+  }
 
-    @media screen and (min-width: 1440px) {
-        font-size: 15px;
-    }
+  @media screen and (min-width: 1440px) {
+    font-size: 15px;
+    // width: 466px;
+  }
 }
 
 .instagram-svg {
-    fill: #FFFFFF;
-    opacity: 0.8;
+  fill: #ffffff;
+  opacity: 0.8;
 }
-
 
 .advantages__item:not(:last-child) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
-
- 
+ul li {
+  display: inline-block;
+  padding-left: 20px;
+  position: relative;
+}
+ul li::marker {
+  font-size: 5px;
+}
+ul li::before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  top: -2%;
+}
 .advantages__list {
-    margin-top: 30px;
-        padding-left: 4%;
-            @media screen and (min-width: 768px) {
-            
-                    padding-left: 0%;
-                }
+  margin-left: 20px;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    padding-left: 12%;
+    padding-right: 61px;
+  }
 
-    @media screen and (min-width: 1024px) {
-        
+  @media screen and (min-width: 1024px) {
+    padding-left: 0%;
     display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0px;
-        align-items: center;
-        justify-items: center;
-        // grid-auto-rows: minm ax(100px, auto);
-        grid-gap: 0px;
-            grid-template-columns: repeat(2, 1fr);
-            place-items: SELF-END;
-            display: grid;
-        }
-
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    align-items: center;
+    justify-items: center;
+    // grid-auto-rows: minm ax(100px, auto);
+    grid-gap: 0px;
+    grid-template-columns: repeat(2, 0.8fr);
+    place-items: SELF-END;
+    display: grid;
+  }
 }
 
 .advantages__position {
-    @media screen and (min-width: 768px) {
-            position: relative;
-        }
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
 }
 .advantages__picture-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -25px;
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0px;
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
-  
+
 .advantages__picture-1 {
-    margin-right: 90px;
-    // @media screen and (min-width: 768px) {
-    //     position: absolute;
-    //         bottom: -126%;
-    //         right: -4%;
-        
-        @media screen and (min-width: 768px) {
-            margin-right: 0px;  
-            // display: block;
-                position: absolute;
-                    bottom: 0%;
-                        right: 16%;
-        }
-        @media screen and (min-width: 1024px) {
-            bottom: 30%;
-                right: 49%;
-        }
-            
-    }
-   
-    
+  margin-right: 90px;
+  // @media screen and (min-width: 768px) {
+  //     position: absolute;
+  //         bottom: -126%;
+  //         right: -4%;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0px;
+    // display: block;
+    position: absolute;
+    bottom: 0%;
+    right: 11%;
+  }
+  @media screen and (min-width: 1024px) {
+    bottom: 30%;
+    right: 49%;
+  }
+}
 
 .advantages__picture-2 {
-    margin-right: 90px;
-    @media screen and (min-width: 768px) {
-            margin-right: 0px;
-            position: absolute;
-top: -79px;
-    right: 6%;
-        }
+  margin-right: 90px;
 
-@media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
+    margin-right: 0px;
+    position: absolute;
     top: -79px;
     right: 6%;
-}
-           
-}
-.advantages__picture-3 {
-    @media screen and (min-width: 768px) {
-        position: absolute;
-            top: 35%;
-                left: 1%;
-    }
+  }
 
   @media screen and (min-width: 1024px) {
-top: 24%;
+    top: 70px;
+    right: 6%;
+  }
+}
+.advantages__picture-3 {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 35%;
+    left: 1%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    top: 24%;
     right: 0%;
   }
-       
 }

@@ -1,0 +1,352 @@
+.service-rev {
+  position: relative;
+  z-index: 4;
+  padding-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+}
+.ellips5 {
+  position: absolute;
+  top: -420px;
+  right: -85px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -280px;
+    left: -150px;
+    z-index: -1;
+  }
+}
+.ellipsCircleRev {
+  height: 325px;
+  position: absolute;
+  top: -550px;
+  left: -255px;
+  transform: rotate(130deg);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    transform: rotate(94deg);
+    top: -643px;
+    width: 679px;
+    height: 546px;
+    left: -254px;
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: -45px;
+    left: -278px;
+    transform: rotate(130deg);
+  }
+}
+.ellipsCircleRev2 {
+  height: 325px;
+  position: absolute;
+  top: -530px;
+  left: -221px;
+  transform: rotate(130deg);
+
+  @media screen and (min-width: 768px) {
+    width: 679px;
+    height: 494px;
+    position: absolute;
+    top: -641px;
+    left: -187px;
+    transform: rotate(100deg);
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: -32px;
+    left: -150px;
+    transform: rotate(130deg);
+  }
+}
+
+.ellipsCircleOff {
+  height: 325px;
+  position: absolute;
+  top: -543px;
+  right: -277px;
+  transform: rotate(130deg);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -641px;
+    right: -550px;
+    transform: rotate(110deg);
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: 14px;
+    right: -357px;
+    transform: rotate(130deg);
+  }
+}
+.ellipsCircleOff2 {
+  height: 325px;
+  position: absolute;
+  top: -550px;
+  right: -221px;
+  transform: rotate(130deg);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -641px;
+    right: -665px;
+    transform: rotate(110deg);
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    transform: rotate(130deg);
+    right: -425px;
+    top: 35px;
+  }
+}
+.nav__buttons--next {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  bottom: 222.5px;
+  cursor: pointer;
+  z-index: 2;
+  fill: #ffffff;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.nav__buttons--prev {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+
+  right: 0;
+  bottom: 222.5px;
+  cursor: pointer;
+  z-index: 2;
+  fill: #ffffff;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.arrow__right--phone {
+  cursor: pointer;
+  fill: #ffffff;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.arrow__left--phone {
+  transform: rotate(180deg);
+  cursor: pointer;
+  fill: #ffffff;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.reviews__titleBlock {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 0px;
+    margin-bottom: 80px;
+  }
+}
+
+.center {
+  @media screen and (min-width: 768px) {
+    padding-left: 84px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 0px;
+  }
+}
+
+.arrow-left--reviews {
+  -webkit-tap-highlight-color: #0000;
+  @media screen and (min-width: 0px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline;
+
+    margin-right: 20px;
+
+    transform: rotate(90deg);
+    fill: #8d8d8d;
+
+    cursor: pointer;
+  }
+}
+
+.arrow-right--reviews {
+  -webkit-tap-highlight-color: #0000;
+  @media screen and (min-width: 0px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline;
+
+    transform: rotate(-90deg);
+
+    fill: #8d8d8d;
+
+    cursor: pointer;
+  }
+}
+
+.review__photo {
+  width: 140px;
+  height: 200px;
+  opacity: 0.9;
+}
+
+.review__photo-9-1 {
+  width: 110px;
+  height: 200px;
+  opacity: 0.9;
+}
+
+.review__photo-9-2 {
+  width: 170px;
+  height: 200px;
+  opacity: 0.9;
+}
+
+.pictureFlex {
+  display: flex;
+}
+
+.pictureFlex:nth-child(odd) {
+  margin-bottom: 30px;
+}
+
+.review__title {
+  width: 206px;
+  height: 30px;
+
+  margin-bottom: 30px;
+
+  font-family: 'AGReverance';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    width: 114px;
+    height: 40px;
+
+    margin-right: 35px;
+
+    font-size: 40px;
+    line-height: 40px;
+
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+
+    opacity: 0.9;
+  }
+}
+
+.reviews__text {
+  width: 285px;
+  height: 125px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+
+  opacity: 0.8;
+
+  color: #ffffff;
+
+  overflow-y: auto;
+}
+
+.flex__reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.reviews__text:nth-child(even) {
+  margin-bottom: 30px;
+}
+
+//REVIEW SCROLL
+
+.reviews__text::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.reviews__text::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #606060;
+  border: 4.5px solid transparent;
+}
+
+.reviews__text::-webkit-scrollbar-thumb {
+  height: 10px;
+  background: rgba(96, 96, 96, 0.5);
+  border: 5em solid #606060;
+  border-radius: 1000px;
+}
+
+.reviews__text::-webkit-scrollbar-thumb:hover {
+  background: hsl(120 100% 10% / 1);
+}
+
+//PAGE SCROLL
+
+html::-webkit-scrollbar {
+  width: 20px;
+}
+
+html::-webkit-scrollbar-track {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(7, 0, 211, 1) 100%
+  );
+}
+
+html::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: 0px 0px 0px 100vh rgb(13, 7, 191);
+}
+
+.pag {
+  width: 280px;
+  text-align: center;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+// HIDE SCROLL EVERYWHERE
+
+// @-moz-document url-prefix() {
+//   /* Disable scrollbar Firefox */
+//   html {
+//     scrollbar-width: none;
+//   }
+// }
+// body {
+//   scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
+//   -ms-overflow-style: none; /* Disable scrollbar IE 10+ */
+// }
+// body::-webkit-scrollbar {
+//   width: 0px;
+//   background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
+// }

@@ -1,26 +1,39 @@
-<header class="header">
+<section class="header" id="headerScroll">
   <div class="content overlay content--demo-3 container">
-    <div class="">
+    <div class="header-container">
       <nav class="navigation">
         <div class="header_icons">
-          <svg class="instagram-svg" width="30" height="30">
-            <use href="./images/spryte.svg#icon-instagram"></use>
-          </svg>
-          <svg class="instagram-svg" width="30" height="30">
-            <use href="./images/spryte.svg#telegram_icon"></use>
-          </svg>
+          <a
+            href="https://www.instagram.com/olyalutso/"
+            target="_blank"
+            style="-webkit-tap-highlight-color: #0000"
+          >
+            <svg class="instagram-svg" width="30" height="30">
+              <use href="./images/spryte.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a
+            href="https://t.me/olyalutso"
+            target="_blank"
+            style="-webkit-tap-highlight-color: #0000"
+          >
+            <svg class="telegram-svg" width="35" height="30">
+              <use href="./images/spryte.svg#telegram_icon"></use>
+            </svg>
+          </a>
         </div>
         <div class="header_menu">
-          <a class="header-menu__item" href="#">ПРО МЕНЕ</a>
-          <a class="header-menu__item" href="#">ПЕРЕВАГИ</a>
-          <a class="header-menu__item" href="#">ПОСЛУГИ</a>
+          <a class="header-menu__item" href="#scrollToAboutMe">ПРО МЕНЕ</a>
+          <a class="header-menu__item" href="#scrollToAdvantages">ПЕРЕВАГИ</a>
+          <a class="header-menu__item" href="#scrollToServices">ПОСЛУГИ</a>
         </div>
         <p class="logo">OLYA LUTSO</p>
         <div class="header_menu">
-          <a class="header-menu__item" href="#">ВІДГУКИ</a>
-          <a class="header-menu__item" href="#">INSTAGRAM</a>
-          <a class="header-menu__item" href="#">КОНТАКТИ</a>
+          <a class="header-menu__item" href="#scrollToReviews">ВІДГУКИ</a>
+          <a class="header-menu__item" href="#scrollToInstagram">INSTAGRAM</a>
+          <a class="header-menu__item" href="#scrollToContacts">КОНТАКТИ</a>
         </div>
+        <img class="ellips" src="./images/background/Ellipse16.png" />
         <div class="hamburger">
           <a href="#" class="menu-btn">
             <span></span>
@@ -66,16 +79,39 @@
           </div>
 
           <div class="hero__container-title">
-            <span class="hero__title-3"
-              >Якщо Ви тут, то прагнете змін, які підкреслять Вашу
-              індивідуальність</span
-            >
+            <div class="hero__container3">
+              <span class="hero__title-3"
+                >Якщо Ви тут, то прагнете змін, які підкреслять Вашу
+                індивідуальність</span
+              >
+            </div>
             <div class="hero__container-text">
-              <svg class="arrow-down" width="54" height="54">
-                <use
-                  href="./images/spryte.svg#icon-iconmonstr-arrow-down-circle-thin"
-                ></use>
-              </svg>
+              <a href="#scrollToAboutMe">
+                <svg
+                  width="54"
+                  height="54"
+                  class="arrow-down"
+                  viewBox="0 0 54 54"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.25,27a26.75,26.75 0 1,0 53.5,0a26.75,26.75 0 1,0 -53.5,0 M26.9998 38.3402L26.9998 16.2002M26.9998 38.3402L29.1598 36.2032M26.9998 38.3402L24.8398 36.2032"
+                    stroke="#8D8D8D"
+                    stroke-width="0.5"
+                    fill="none"
+                  />
+                </svg>
+              </a>
+
+              <img
+                class="ellipsCircleSmall"
+                src="./images/background/EllipseCircle.png"
+              />
+              <img
+                class="ellipsCircleSmall2"
+                src="./images/background/EllipseCircleSecond.png"
+              />
+
               <span class="hero__text"
                 >Збережу ваші кошти <br />та нервові клітини</span
               >
@@ -97,35 +133,55 @@
       alt="image description"
     />
     <div class="global-menu">
+      <img class="hamCircle" src="./images/hamburgCircle.png" />
+      <img class="hamCircle2" src="./images/hamburgCircle2.png" />
+
       <div class="global-menu__wrap">
-        <a class="global-menu__item global-menu__item--demo-3" href="#"
+        <a
+          class="global-menu__item global-menu__item--demo-3"
+          href="#scrollToAboutMe"
           >ПРО МЕНЕ</a
         >
-        <a class="global-menu__item global-menu__item--demo-3" href="#"
+        <a
+          class="global-menu__item global-menu__item--demo-3"
+          href="#scrollToAdvantages"
           >ПЕРЕВАГИ</a
         >
-        <a class="global-menu__item global-menu__item--demo-3" href="#"
+        <a
+          class="global-menu__item global-menu__item--demo-3"
+          href="#scrollToServices"
           >ПОСЛУГИ</a
         >
-        <a class="global-menu__item global-menu__item--demo-3" href="#"
+        <a
+          class="global-menu__item global-menu__item--demo-3"
+          href="#scrollToReviews"
           >ВІДГУКИ</a
         >
-        <a class="global-menu__item global-menu__item--demo-3" href="#"
+        <a
+          class="global-menu__item global-menu__item--demo-3"
+          href="#scrollToInstagram"
           >INSTAGRAM</a
         >
-        <a class="global-menu__item global-menu__item--demo-3" href="#"
+        <a
+          class="global-menu__item global-menu__item--demo-3"
+          href="#scrollToContacts"
           >КОНТАКТИ</a
         >
       </div>
     </div>
     <svg
       class="shape-overlays"
-      viewBox="0 0 100 100"
-      preserveAspectRatio="none"
+      viewbox="0 0 100 100"
+      preserveaspectratio="none"
     >
       <path class="shape-overlays__path"></path>
       <path class="shape-overlays__path"></path>
       <path class="shape-overlays__path"></path>
     </svg>
   </div>
-</header>
+  <img
+    class="ellips2"
+    src="./images/background/Ellipse16.png"
+    alt="image description"
+  />
+</section>

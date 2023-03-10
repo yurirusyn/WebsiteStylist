@@ -104,11 +104,15 @@ class ShapeOverlays {
 
 (function () {
   const elmHamburger = document.querySelector('.hamburger');
+  const elmHamburgerModal = document.querySelector('.hamburger-modal');
   const gNavItems = document.querySelectorAll('.global-menu__item');
   const overlayGlobalMenu = document.querySelector('.global-menu');
   const elmOverlay = document.querySelector('.shape-overlays');
   const icon = document.querySelector('.menu-btn');
+  const iconModal = document.querySelector('.menu-btn-modal');
   const overlay = new ShapeOverlays(elmOverlay);
+  const closeMenu = document.querySelector('.global-menu__wrap');
+  const modal = document.querySelector('.modal');
 
   elmHamburger.addEventListener('click', () => {
     if (overlay.isAnimating) {
@@ -131,4 +135,60 @@ class ShapeOverlays {
       }
     }
   });
+  elmHamburgerModal.addEventListener('click', () => {
+    if (overlay.isAnimating) {
+      return false;
+    }
+    overlay.toggle();
+    if (overlay.isOpened === true) {
+      elmHamburgerModal.classList.add('is-opened-navi');
+      icon.classList.add('menu-btn_active');
+      overlayGlobalMenu.classList.add('overlay-global_menu');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      elmHamburgerModal.classList.remove('is-opened-navi');
+      icon.classList.remove('menu-btn_active');
+      overlayGlobalMenu.classList.remove('overlay-global_menu');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
+  closeMenu.addEventListener('click', () => {
+    if (overlay.isAnimating) {
+      return false;
+    }
+
+    elmHamburger.classList.remove('is-opened-navi');
+    elmHamburgerModal.classList.remove('is-opened-navi');
+    console.log('modal', modal);
+    modal.style.zIndex = '-1000';
+    console.log('modal.style.zIndex', modal.style.zIndex);
+    icon.classList.remove('menu-btn_active');
+
+    overlay.close();
+    if (overlay.isOpened === true) {
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
 })();
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+anchors.forEach(anchor => {
+  anchor.addEventListener('click', event => {
+    event.preventDefault();
+    const blockId = anchor.getAttribute('href').substring(1);
+    document.getElementById(blockId).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+});
