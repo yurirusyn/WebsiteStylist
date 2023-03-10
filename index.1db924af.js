@@ -1,0 +1,2 @@
+var checkboxTelegram=document.querySelector("#Telegram"),checkboxViber=document.querySelector("#Viber"),fromInput=document.querySelector(".form__input-messager");checkboxTelegram.addEventListener("change",(function(){this.checked&&(fromInput.value=this.value)})),checkboxViber.addEventListener("change",(function(){this.checked&&(fromInput.value=this.value)}));
+//# sourceMappingURL=index.1db924af.js.map
