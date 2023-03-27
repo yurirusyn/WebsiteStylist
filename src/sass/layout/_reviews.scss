@@ -62,7 +62,10 @@
     transform: rotate(130deg);
   }
 }
-
+.service-tab {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .ellipsCircleOff {
   height: 325px;
   position: absolute;
