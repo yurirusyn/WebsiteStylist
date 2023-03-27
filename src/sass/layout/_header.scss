@@ -553,8 +553,12 @@
 .cross-img-menu {
   color: #1c1c1c;
   position: absolute;
-  top: -110px;
+  top: -170px;
+  right: -44px;
   height: 25px;
-  right: -233px;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    top: -85px;
+    right: -170px;
+  }
 }
