@@ -2,7 +2,6 @@
   padding-bottom: 70px;
   position: relative;
   z-index: 1;
-  padding-top: 50px;
   @media screen and (min-width: 768px) {
     padding-bottom: 20px;
     display: flex;
@@ -164,7 +163,7 @@ ul li::before {
   top: -2%;
 }
 .advantages__list {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 30px;
   @media screen and (min-width: 768px) {
     padding-left: 12%;
@@ -193,7 +192,7 @@ ul li::before {
 }
 .advantages__picture-div {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: -25px;
   @media screen and (min-width: 768px) {
@@ -202,7 +201,7 @@ ul li::before {
 }
 
 .advantages__picture-1 {
-  margin-right: 90px;
+  // margin-right: 90px;
   // @media screen and (min-width: 768px) {
   //     position: absolute;
   //         bottom: -126%;
@@ -216,13 +215,13 @@ ul li::before {
     right: 11%;
   }
   @media screen and (min-width: 1024px) {
-    bottom: 30%;
+    bottom: 15%;
     right: 49%;
   }
 }
 
 .advantages__picture-2 {
-  margin-right: 90px;
+  // margin-right: 90px;
 
   @media screen and (min-width: 768px) {
     margin-right: 0px;
@@ -246,5 +245,23 @@ ul li::before {
   @media screen and (min-width: 1024px) {
     top: 24%;
     right: 0%;
+  }
+}
+.clock-img {
+  @media screen and (max-width: 768px) {
+    height: 48px;
+    width: 21px;
+  }
+}
+.bag-img {
+  @media screen and (max-width: 768px) {
+    width: 60px;
+  }
+}
+
+.coat-img {
+  @media screen and (max-width: 768px) {
+    height: 165px;
+    width: 85px;
   }
 }

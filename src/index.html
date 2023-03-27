@@ -35,10 +35,12 @@
             if (submitted) {
               const popUp = document.getElementById('pop_up')
               // const phonNum = document.getElementById('phone_number');
+              const popUpBackground = document.getElementById('wrap_back')
               popUp.classList.add('activePopUp')
+              popUpBackground.classList.add('wrap-pop-up')
               }"
     ></iframe>
-    <div class="wrap">
+    <div class="wrap" id="wrap_back">
       <div class="pop_up" id="pop_up">
         <img
           style="position: absolute; right: 0; top: -11px"
