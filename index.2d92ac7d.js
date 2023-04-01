@@ -1,0 +1,2 @@
+!function(){var e=document.getElementById("close_pop_up"),t=document.getElementById("pop_up"),n=document.getElementById("perHead"),c=document.getElementById("wrap_back");e.addEventListener("click",(function(){c.classList.remove("wrap-pop-up")})),e.addEventListener("click",(function(){t.classList.remove("activePopUp")})),n.addEventListener("click",(function(){t.classList.remove("activePopUp")}))}();
+//# sourceMappingURL=index.2d92ac7d.js.map
