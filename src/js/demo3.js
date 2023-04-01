@@ -112,6 +112,7 @@ class ShapeOverlays {
   const iconModal = document.querySelector('.menu-btn-modal');
   const overlay = new ShapeOverlays(elmOverlay);
   const closeMenu = document.querySelector('.global-menu__wrap');
+  const closeMenuService = document.querySelector('.cross-block');
   const modal = document.querySelector('.modal');
 
   elmHamburger.addEventListener('click', () => {

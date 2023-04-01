@@ -161,7 +161,7 @@
 .service__photo {
   border-radius: 0 100px 0 0;
   width: 280px;
-  height: 120px;
+  height: 160px;
   @media screen and (min-width: 768px) {
     width: 360px;
     height: 220px;
@@ -178,7 +178,7 @@
 // -webkit-tap-highlight-color: #0000;
 .secondImage {
   width: 280px;
-  height: 120px;
+  height: 160px;
   border-top-right-radius: 40%;
 
   @media screen and (min-width: 768px) {
@@ -225,6 +225,12 @@
 .service__category--number {
   @media screen and (min-width: 768px) {
     display: none;
+  }
+}
+
+.non-space {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0px;
   }
 }
 .swiper-button-disabled {

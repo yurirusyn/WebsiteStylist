@@ -1,7 +1,11 @@
 const closePopUp = document.getElementById('close_pop_up');
 const popUp = document.getElementById('pop_up');
 const scrollClose = document.getElementById('perHead');
+const popUpBackground = document.getElementById('wrap_back');
 
+closePopUp.addEventListener('click', () => {
+  popUpBackground.classList.remove('wrap-pop-up');
+});
 closePopUp.addEventListener('click', () => {
   popUp.classList.remove('activePopUp');
 });
