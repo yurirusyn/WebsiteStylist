@@ -618,5 +618,14 @@ $color2: #c4c4c4;
   display: flex;
   position: fixed;
   left: 0;
-  top: 40%;
+}
+.wrap-pop-up {
+  width: 100%;
+  z-index: 99999;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }

@@ -57,6 +57,18 @@ let modalSlider = new Swiper('.modal-swiper', {
   keyboard: true,
 });
 
+let modalSliderMobile = new Swiper('.modal-swiper', {
+  navigation: {
+    nextEl: '.next-without-circle',
+    prevEl: '.prev-without-circle',
+  },
+  pagination: {
+    el: '.pagination',
+    clickable: true,
+  },
+  keyboard: true,
+});
+
 // mainPageSlider.controller.control = modalSlider;
 // modalSlider.controller.control = mainPageSlider;
 
