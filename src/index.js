@@ -11,6 +11,7 @@ closePopUp.addEventListener('click', () => {
 });
 scrollClose.addEventListener('click', () => {
   popUp.classList.remove('activePopUp');
+  popUpBackground.classList.remove('wrap-pop-up');
 });
 
 // const phonNum = document.getElementById('phone_number');
