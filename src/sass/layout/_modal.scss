@@ -95,7 +95,7 @@
 .slider-content {
   display: block;
   height: 100%;
-  margin-top: 25px;
+  // margin-top: 25px;
   @media screen and (min-width: 768px) {
     margin-top: 50px;
   }
@@ -291,7 +291,7 @@ ol li {
   overflow-x: hidden;
 }
 .second-slide {
-  overflow: auto;
+  // overflow: auto;
 }
 
 .swiper-slide-modal {
@@ -313,7 +313,7 @@ ol li {
 .swiper-wrapper-modal {
   padding-top: 40px;
   margin-top: 15px;
-  height: 1250px;
+  height: 1350px;
   @media screen and (min-width: 768px) {
     height: 1215px;
   }
@@ -322,6 +322,9 @@ ol li {
   }
 }
 
+.slide-title-second {
+  margin-bottom: 20px;
+}
 .swiper-button-next-modal {
   height: 20px;
   color: transparent;
