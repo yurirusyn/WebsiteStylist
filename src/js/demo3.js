@@ -114,6 +114,16 @@ class ShapeOverlays {
   const closeMenu = document.querySelector('.global-menu__wrap');
   const closeMenuService = document.querySelector('.cross-block');
   const modal = document.querySelector('.modal');
+  const hideCross = document.getElementById('close_pop_up2');
+  const humCross = document.getElementById('crossHide');
+  const showCross = document.getElementById('showCross');
+  showCross.addEventListener('click', () => {
+    hideCross.style.display = 'flex';
+  });
+
+  humCross.addEventListener('click', () => {
+    hideCross.style.display = 'none';
+  });
 
   elmHamburger.addEventListener('click', () => {
     if (overlay.isAnimating) {
