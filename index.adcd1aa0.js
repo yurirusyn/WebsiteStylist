@@ -1,0 +1,2 @@
+!function(){var e=document.getElementById("close_pop_up"),t=document.getElementById("pop_up"),n=document.getElementById("perHead"),c=document.getElementById("wrap_back"),o=document.getElementById("modalId");e.addEventListener("click",(function(){c.classList.remove("wrap-pop-up")})),e.addEventListener("click",(function(){t.classList.remove("activePopUp")})),n.addEventListener("click",(function(){t.classList.remove("activePopUp"),c.classList.remove("wrap-pop-up"),o.style.zIndex="-1000"}))}();
+//# sourceMappingURL=index.adcd1aa0.js.map

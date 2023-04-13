@@ -1,0 +1,2 @@
+const e=document.getElementById("close_pop_up"),t=document.getElementById("pop_up"),c=document.getElementById("perHead"),d=document.getElementById("wrap_back"),p=document.getElementById("modalId");e.addEventListener("click",(()=>{d.classList.remove("wrap-pop-up")})),e.addEventListener("click",(()=>{t.classList.remove("activePopUp")})),c.addEventListener("click",(()=>{t.classList.remove("activePopUp"),d.classList.remove("wrap-pop-up"),p.style.zIndex="-1000"}));
+//# sourceMappingURL=index.c1a413cd.js.map
