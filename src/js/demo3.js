@@ -121,6 +121,24 @@ class ShapeOverlays {
     hideCross.style.display = 'flex';
   });
 
+  hideCross.addEventListener('click', () => {
+    elmHamburger.classList.remove('is-opened-navi');
+    elmHamburgerModal.classList.remove('is-opened-navi');
+    console.log('modal', modal);
+    console.log('modal.style.zIndex', modal.style.zIndex);
+    icon.classList.remove('menu-btn_active');
+    overlay.close();
+    if (overlay.isOpened === true) {
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
+
   humCross.addEventListener('click', () => {
     hideCross.style.display = 'none';
   });
@@ -167,29 +185,29 @@ class ShapeOverlays {
       }
     }
   });
-  closeMenu.addEventListener('click', () => {
-    if (overlay.isAnimating) {
-      return false;
-    }
+  // closeMenu.addEventListener('click', () => {
+  //   if (overlay.isAnimating) {
+  //     return false;
+  //   }
 
-    elmHamburger.classList.remove('is-opened-navi');
-    elmHamburgerModal.classList.remove('is-opened-navi');
-    console.log('modal', modal);
-    modal.style.zIndex = '-1000';
-    console.log('modal.style.zIndex', modal.style.zIndex);
-    icon.classList.remove('menu-btn_active');
+  //   elmHamburger.classList.remove('is-opened-navi');
+  //   elmHamburgerModal.classList.remove('is-opened-navi');
+  //   console.log('modal', modal);
+  //   modal.style.zIndex = '-1000';
+  //   console.log('modal.style.zIndex', modal.style.zIndex);
+  //   icon.classList.remove('menu-btn_active');
 
-    overlay.close();
-    if (overlay.isOpened === true) {
-      for (var i = 0; i < gNavItems.length; i++) {
-        gNavItems[i].classList.add('is-opened');
-      }
-    } else {
-      for (var i = 0; i < gNavItems.length; i++) {
-        gNavItems[i].classList.remove('is-opened');
-      }
-    }
-  });
+  //   overlay.close();
+  //   if (overlay.isOpened === true) {
+  //     for (var i = 0; i < gNavItems.length; i++) {
+  //       gNavItems[i].classList.add('is-opened');
+  //     }
+  //   } else {
+  //     for (var i = 0; i < gNavItems.length; i++) {
+  //       gNavItems[i].classList.remove('is-opened');
+  //     }
+  //   }
+  // });
 })();
 
 const anchors = document.querySelectorAll('a[href*="#"]');
