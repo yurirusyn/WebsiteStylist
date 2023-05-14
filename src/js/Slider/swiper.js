@@ -55,6 +55,14 @@ let modalSlider = new Swiper('.modal-swiper', {
     clickable: true,
   },
   keyboard: true,
+  on: {
+    init: function () {
+      if (this.isBeginning) {
+        this.navigation.prevEl.style.opacity = '0';
+        this.navigation.nextEl.style.opacity = '1'; // Show next button
+      }
+    },
+  },
 });
 
 let modalSliderMobile = new Swiper('.modal-swiper', {
@@ -67,7 +75,39 @@ let modalSliderMobile = new Swiper('.modal-swiper', {
     clickable: true,
   },
   keyboard: true,
+  on: {
+    init: function () {
+      if (this.isBeginning) {
+        this.navigation.prevEl.style.opacity = '0';
+        this.navigation.nextEl.style.opacity = '1'; // Show next button
+      }
+    },
+  },
 });
+
+// let modalSlider = new Swiper('.modal-swiper', {
+//   navigation: {
+//     nextEl: '.next',
+//     prevEl: '.prev',
+//   },
+//   pagination: {
+//     el: '.pagination',
+//     clickable: true,
+//   },
+//   keyboard: true,
+// });
+
+// let modalSliderMobile = new Swiper('.modal-swiper', {
+//   navigation: {
+//     nextEl: '.next-without-circle',
+//     prevEl: '.prev-without-circle',
+//   },
+//   pagination: {
+//     el: '.pagination',
+//     clickable: true,
+//   },
+//   keyboard: true,
+// });
 
 // mainPageSlider.controller.control = modalSlider;
 // modalSlider.controller.control = mainPageSlider;
