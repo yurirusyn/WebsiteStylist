@@ -15,6 +15,16 @@ scrollClose.addEventListener('click', () => {
   modal.style.zIndex = '-1000';
 });
 
+const footerNavLinks = document.querySelectorAll('.footer__nav-link');
+
+footerNavLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    popUp.classList.remove('activePopUp');
+    popUpBackground.classList.remove('wrap-pop-up');
+    modal.style.zIndex = '-1000';
+  });
+});
+
 // const phonNum = document.getElementById('phone_number');
 // console.log('phonNum:', phonNum.value);
 
