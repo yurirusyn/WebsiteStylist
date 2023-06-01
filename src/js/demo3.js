@@ -115,6 +115,10 @@ class ShapeOverlays {
   const closeMenuService = document.querySelector('.cross-block');
   const modal = document.querySelector('.modal');
   const hideCross = document.getElementById('close_pop_up2');
+  const closeTextPopup = document.getElementById('close_text_popup');
+  const closeTextPopups = document.querySelectorAll(
+    '.global-menu__item--demo-3'
+  );
   const humCross = document.getElementById('crossHide');
   const showCross = document.getElementById('showCross');
   showCross.addEventListener('click', () => {
@@ -137,6 +141,50 @@ class ShapeOverlays {
         gNavItems[i].classList.remove('is-opened');
       }
     }
+  });
+  closeTextPopup.addEventListener('click', () => {
+    elmHamburger.classList.remove('is-opened-navi');
+    elmHamburgerModal.classList.remove('is-opened-navi');
+    console.log('modal', modal);
+    console.log('modal.style.zIndex', modal.style.zIndex);
+    icon.classList.remove('menu-btn_active');
+    overlay.close();
+    if (overlay.isOpened === true) {
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
+
+  closeTextPopups.forEach(closeTextPopup => {
+    closeTextPopup.addEventListener('click', event => {
+      event.preventDefault(); // Prevent the default link behavior
+
+      elmHamburger.classList.remove('is-opened-navi');
+      elmHamburgerModal.classList.remove('is-opened-navi');
+      console.log('modal', modal);
+      console.log('modal.style.zIndex', modal.style.zIndex);
+      icon.classList.remove('menu-btn_active');
+      overlay.close();
+      if (overlay.isOpened === true) {
+        for (var i = 0; i < gNavItems.length; i++) {
+          gNavItems[i].classList.add('is-opened');
+        }
+      } else {
+        for (var i = 0; i < gNavItems.length; i++) {
+          gNavItems[i].classList.remove('is-opened');
+        }
+      }
+
+      // Additional actions
+      modal.style.zIndex = '-1000';
+      const currentModalSlide = modalSlider.realIndex;
+      mainPageSlider.slideTo(currentModalSlide);
+    });
   });
 
   humCross.addEventListener('click', () => {

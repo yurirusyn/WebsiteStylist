@@ -15,7 +15,8 @@ const openButtonModal = document.querySelectorAll('.service__button');
 const modal = document.querySelector('.modal');
 const modalArrow = document.querySelector('.arrow');
 const modalClose = document.querySelector('.modal_close');
-
+const closeTextPopupFooter = document.getElementById('close_text_popup_footer');
+const closeTextPopups = document.querySelectorAll('.global-menu__item--demo-3');
 // const modalNavigation = document.querySelector('modalNav');
 // console.log('modalNavigation:', modalNavigation);
 
