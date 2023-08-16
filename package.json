@@ -18,7 +18,9 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "@parcel/config-default": "^2.9.3",
     "cleave.js": "^1.6.0",
+    "firebase-tools": "^12.4.7",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {

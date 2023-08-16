@@ -270,21 +270,26 @@ anchors.forEach(anchor => {
   });
 });
 function formatPhoneNumber(input) {
-  let phoneNumber = input.value.replace(/\D/g, ''); // Видаляємо всі символи, що не є цифрами
-  if (phoneNumber.length > 13) {
-    phoneNumber = phoneNumber.slice(0, 13); // Максимальна довжина - 13 символів (включаючи "+")
+  let phoneNumber = input.value.replace(/\D/g, '');
+
+  if (phoneNumber.length < 9) {
+    input.setCustomValidity('Введіть щонайменше 9 цифр');
+  } else {
+    input.setCustomValidity('');
+
+    if (phoneNumber.length > 13) {
+      phoneNumber = phoneNumber.slice(0, 13);
+    }
+
+    if (!phoneNumber.startsWith('+')) {
+      phoneNumber = '+' + phoneNumber;
+    }
+
+    phoneNumber = phoneNumber.replace(
+      /(\+\d{3})(\d{3})(\d{2})(\d{2})/,
+      '$1 $2-$3-$4'
+    );
+
+    input.value = phoneNumber;
   }
-
-  // Додаємо "+" попереду номеру, якщо його немає
-  if (!phoneNumber.startsWith('+')) {
-    phoneNumber = '+' + phoneNumber;
-  }
-
-  // Форматуємо номер телефону у зручний вигляд
-  phoneNumber = phoneNumber.replace(
-    /(\+\d{3})(\d{3})(\d{2})(\d{2})/,
-    '$1 $2-$3-$4'
-  );
-
-  input.value = phoneNumber;
 }
