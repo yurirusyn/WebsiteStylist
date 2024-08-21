@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@parcel/config-default": "^2.9.3",
+    "@parcel/reporter-dev-server": "^2.12.0",
     "cleave.js": "^1.6.0",
     "firebase-tools": "^12.4.7",
     "modern-normalize": "^1.1.0"
@@ -26,8 +27,8 @@
   "devDependencies": {
     "@parcel/config-default": "^2.9.3",
     "@parcel/resolver-glob": "^2.7.0",
-    "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
