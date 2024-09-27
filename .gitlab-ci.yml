@@ -12,11 +12,3 @@ create_file_job:
   artifacts:
     paths:
       - build/
-
-test_file:
-  stage: test
-  image: alpine
-  script:
-    - test -f build/somefile.txt
-  dependencies:
-    - create_file_job
