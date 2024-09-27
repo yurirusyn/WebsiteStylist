@@ -1,5 +1,10 @@
-image: alpine
-script:
-  - echo "Building..."
-  - mkdir build
-  - touch build/somefile.txt
+stages:
+  - build
+
+create_file_job:
+  stage: build
+  image: alpine
+  script:
+    - echo "Building..."
+    - mkdir build
+    - touch build/somefile.txt
