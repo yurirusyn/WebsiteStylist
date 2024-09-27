@@ -9,7 +9,7 @@ create_file_job:
     - mkdir build
     - touch build/somefile.txt
 
-test_file:  
+test_file:
   image: alpine
   script:
     - test -f build/somefile.txt
