@@ -1,3 +1,5 @@
+image: node:16.19.0
+
 stages:
   - build
   - test
@@ -6,9 +8,7 @@ create_file_job:
   stage: build
   image: alpine
   script:
-    - echo "Building..."
-    - mkdir build
-    - touch build/somefile.txt
+   npm install
   artifacts:
     paths:
       - build/
