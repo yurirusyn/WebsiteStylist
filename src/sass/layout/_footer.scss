@@ -45,6 +45,7 @@
   color: #ffffff;
   opacity: 0.8;
   margin-bottom: 19px;
+  margin-top: 70px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
@@ -188,5 +189,22 @@
   @media screen and (min-width: 1024px) {
     display: grid;
     justify-content: end;
+    left: 25%;
+  }
+}
+
+.footer__mono {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  height: 67%;
+  }
+  
+  @media screen and (min-width: 1024px) {
+     width: 14%;
+  height: 67%;
   }
 }
