@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://allfont.net/allfont.css?fonts=agreverance-roman"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Оплата — OLYA LUTSO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./sass/index.scss" />
+
+    <script type="module" src="./index.js"></script>
+    <script>document.documentElement.className = 'js';</script>
+    <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
+  </head>
+  <body class="demo-3">
+
+    <main class="payment">
+      <div class="container">
+        <a class="payment__back" href="#" data-href="./index.html" aria-label="Повернутися на головну">← Назад</a>
+        <h1 class="payment__title">Оплата та кредит</h1>
+        <p class="payment__text">
+          Можлива оплата частинами через <strong>monobank</strong>. Нижче — загальна інформація та рекомендації. Точні умови кредитування (термін, відсоткова ставка) ви побачите в додатку банку при оформленні.
+        </p>
+
+        <div class="payment__wrap">
+          <a href="https://www.monobank.ua" target="_blank" rel="noopener noreferrer">
+            <img class="payment__mono" src="./images/footer/mono.png" alt="monobank" />
+          </a>
+
+          <ul class="payment__list">
+            <li><strong>Як це працює:</strong> оформлення оплати частинами через додаток monobank або банк, який підтримує розстрочку.</li>
+            <li><strong>Терміни:</strong> зазвичай доступні варіанти на 3, 6 або 12 місяців — уточнюйте в додатку банку.</li>
+            <li><strong>Вартість:</strong> умови (відсоткова ставка та щомісячний платіж) залежать від банку і вашої кредитної угоди.</li>
+            <li><strong>Питання:</strong> пишіть у Instagram або Telegram, або телефонуйте <a href="tel:+380506957429">+380 (50) 695 74 29</a>.</li>
+          </ul>
+        </div>
+
+        <p class="payment__note">
+          Для оформлення оплати частинами підготуйте банківську картку та авторизуйтесь у додатку monobank. Якщо потрібна допомога — я з радістю проконсультую.
+        </p>
+      </div>
+    </main>
+
+    <include src="./partials/modal.html"></include>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/Slider/swiper.js"></script>
+    <script src="./js/Slider/arrows.js"></script>
+    <script src="./js/modal/modal.js"></script>
+
+    <script src="./js/demo.js"></script>
+    <script src="./js/easings.js"></script>
+    <script src="./js/demo3.js"></script>
+    <script type="module" src="./js/form/cleave.js"></script>
+    <script src="./js/form/moveCursorToEnd.js"></script>
+    <script src="./js/form/checkbox.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const back = document.querySelector('.payment__back');
+        if (!back) return;
+        back.addEventListener('click', function (e) {
+          e.preventDefault();
+          // Try to go back in history if possible, otherwise go to index
+          if (window.history.length > 1) {
+            window.history.back();
+          } else {
+            window.location.href = back.dataset.href || './index.html';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
