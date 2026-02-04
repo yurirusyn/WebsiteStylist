@@ -71,8 +71,12 @@
         if (!back) return;
         back.addEventListener('click', function (e) {
           e.preventDefault();
-          // Try to go back in history if possible, otherwise go to index
-          if (window.history.length > 1) {
+          // Check if user came from within the site using referrer
+          const referrer = document.referrer;
+          const currentOrigin = window.location.origin;
+          const cameFromSite = referrer && referrer.includes(currentOrigin);
+          
+          if (cameFromSite) {
             window.history.back();
           } else {
             window.location.href = back.dataset.href || './index.html';
