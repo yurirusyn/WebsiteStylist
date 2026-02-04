@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://allfont.net/allfont.css?fonts=agreverance-roman"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Оплата — OLYA LUTSO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./sass/index.scss" />
+
+    <script type="module" src="./index.js"></script>
+    <script>document.documentElement.className = 'js';</script>
+    <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
+  </head>
+  <body class="demo-3">
+
+    <main class="payment">
+      <div class="container">
+        <div class="payment__inner">
+        <a class="payment__back" href="#" data-href="./index.html" aria-label="Повернутися на головну">← Назад</a>
+        <h1 class="payment__title">Оплата та кредит</h1>
+    
+
+        <div class="payment__wrap">
+          <a href="https://www.monobank.ua" target="_blank" rel="noopener noreferrer">
+            <img class="payment__mono" src="./images/footer/mono.png" alt="monobank" />
+          </a>
+
+ <section class="payment__legal">
+          <p><strong>Покупка частинами monobank | Universal Bank</strong></p>
+
+          <p><strong>Надавач послуг:</strong> АТ «УНІВЕРСАЛ БАНК», ліцензія НБУ №92 від 20.01.1994, номер у Держреєстрі банків №226.</p>
+
+          <ul>
+            <li>Мінімальна сума розстрочки: 1 грн</li>
+            <li>Максимальна сума розстрочки: 400 000 грн</li>
+            <li>Реальна річна процентна ставка: 0,000001%</li>
+            <li>Доступний строк (кількість платежів): 3–25</li>
+            <li>Порядок погашення: щомісячні платежі рівними частинами</li>
+            <li>Перший платіж — у момент оформлення покупки</li>
+          </ul>
+
+          <p>Інформація про істотні характеристики продукту та попередження розміщені на сайті продукту: <a href="https://chast.monobank.ua" target="_blank" rel="noopener noreferrer">chast.monobank.ua</a>.</p>
+        </section>
+        </div>
+      </div>
+    </main>
+
+    <include src="./partials/modal.html"></include>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/Slider/swiper.js"></script>
+    <script src="./js/Slider/arrows.js"></script>
+    <script src="./js/modal/modal.js"></script>
+
+    <script src="./js/demo.js"></script>
+    <script src="./js/easings.js"></script>
+    <script src="./js/demo3.js"></script>
+    <script type="module" src="./js/form/cleave.js"></script>
+    <script src="./js/form/moveCursorToEnd.js"></script>
+    <script src="./js/form/checkbox.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const back = document.querySelector('.payment__back');
+        if (!back) return;
+        back.addEventListener('click', function (e) {
+          e.preventDefault();
+          // Check if user came from within the site using referrer
+          const referrer = document.referrer;
+          const currentOrigin = window.location.origin;
+          const cameFromSite = referrer && referrer.includes(currentOrigin);
+          
+          if (cameFromSite) {
+            window.history.back();
+          } else {
+            window.location.href = back.dataset.href || './index.html';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

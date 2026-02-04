@@ -32,11 +32,12 @@
             name="entry.760238429"
             id="phone_number"
             value=""
-            pattern="[\d]{9,13}"
+            pattern="\+[\d\s()-]{9,13}"
             placeholder="+XXX (__) ___-__-__"
             class="form__input-phone-1 form__input"
             title="Введіть дійсний номер телефону (щонайменше 9 цифр)"
             oninput="formatPhoneNumber(this)"
+            minlength="9"
             required
           />
           <p class="form__messenger">Оберіть зручний месенджер</p>
